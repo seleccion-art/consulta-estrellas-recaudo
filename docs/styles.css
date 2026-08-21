@@ -265,18 +265,30 @@ img {
 }
 
 /* Estilos para las tarjetas de categorías con estrella */
+/* Tarjetas de reconocimientos */
 .badge-star {
-  background: var(--badge-bg);
-  border: 1px solid var(--badge-border);
+  background: var(--badge-bg, #f8fafc);
+  border: 1px solid var(--badge-border, #cbd5e1);
   color: #334155;
-  padding: 10px 12px;
+  padding: 8px 12px;
   border-radius: 8px;
   font-size: 0.8rem;
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  overflow: hidden; /* Evita que las imágenes grandes se salgan del recuadro */
+}
+
+/* Control estricto del tamaño de la estrella */
+.star-badge-icon {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  object-fit: contain;
+  flex-shrink: 0; /* Impide que la imagen se deforme o estire */
 }
 
 .star-badge-icon {
