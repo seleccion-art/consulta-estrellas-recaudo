@@ -48,87 +48,125 @@
   </main>
 
   <script>
-    let datos = [];
+  let datos = [];
 
-    // Cargar base de datos desde data.json
-    fetch('data.json')
-      .then(res => res.json())
-      .then(json => datos = json)
-      .catch(err => console.error('Error al cargar data.json:', err));
+  // Cargar la base de datos desde data.json
+  fetch('data.json')
+    .then(res => res.json())
+    .then(json => datos = json)
+    .catch(err => console.error('Error al cargar data.json:', err));
 
-    function buscar() {
-      const cedula = document.getElementById('cedula').value.trim();
-      const resultado = document.getElementById('resultado');
-      const error = document.getElementById('error');
+  // Función para clasificar cada categoría y devolver su estrella + color de borde
+  function obtenerEstrella(categoria) {
+    const cat = categoria.toLowerCase().trim();
 
-      resultado.innerHTML = '';
-      error.innerHTML = '';
-
-      // Validar si el input está vacío
-      if (!cedula) {
-        error.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Por favor, ingresa un número de documento.';
-        return;
-      }
-
-      // Buscar coincidencia en data.json
-      const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
-
-      if (!persona) {
-        error.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> No se encontraron registros para este documento.';
-        return;
-      }
-
-      const mensaje = 'Gracias por tu compromiso y participación. Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
-
-      // Generar Badges / Chips dinámicos para las categorías
-      let categoriasHTML = '';
-      if (persona.categorias && persona.categorias.length > 0) {
-        persona.categorias.forEach(cat => {
-          categoriasHTML += `<div class="badge"><i class="fa-solid fa-circle-check"></i> ${cat}</div>`;
-        });
-      } else {
-        categoriasHTML = '<p class="no-data">Sin categorías registradas.</p>';
-      }
-
-      // Inyectar la interfaz responsiva de 2 columnas con los datos reales
-      resultado.innerHTML = `
-        <div class="results-grid">
-          <div class="left-col">
-            <section class="user-profile">
-              <div class="user-info">
-                <span class="user-label">Nombre:</span>
-                <span class="user-value">${persona.nombre}</span>
-              </div>
-              <div class="user-info">
-                <span class="user-label">Cargo:</span>
-                <span class="user-value">${persona.cargo}</span>
-              </div>
-            </section>
-          </div>
-
-          <div class="right-col">
-            <section class="stars-hero">
-              <div class="stars-title">ESTRELLAS</div>
-              <div class="stars-score">
-                <span class="star-icon">⭐</span>
-                <span class="score-number">${persona.total}</span>
-              </div>
-              <p class="stars-description">${mensaje}</p>
-            </section>
-          </div>
-
-          <div class="col-full">
-            <section class="badges-section">
-              <h2 class="section-title">Categorías reconocidas:</h2>
-              <div class="badges-grid">
-                ${categoriasHTML}
-              </div>
-            </section>
-          </div>
-        </div>
-      `;
+    // 1. ESTRELLA AZUL: Esencia RB
+    if (cat.includes('esencia') || cat.includes('servicio rb') || cat.includes('integridad') || 
+        cat.includes('honestidad') || cat.includes('respeto') || cat.includes('equidad') || 
+        cat.includes('excelencia') || cat.includes('creatividad') || cat.includes('diversidad')) {
+      return { img: 'img/estrella-azul.png', color: '#0284c7' };
     }
-  </script>
+
+    // 2. ESTRELLA ROJA: Aprendemos y Aportamos en RB
+    if (cat.includes('capacitación') || cat.includes('capacitacion') || cat.includes('curso') || 
+        cat.includes('malla') || cat.includes('ubits') || cat.includes('semillero') || 
+        cat.includes('brigadistas') || cat.includes('proyectos') || cat.includes('copasst') || 
+        cat.includes('equipares') || cat.includes('hse') || cat.includes('sarlaft') || 
+        cat.includes('acoso') || cat.includes('seguridad') || cat.includes('gobierno corporativo')) {
+      return { img: 'img/estrella-roja.png', color: '#dc2626' };
+    }
+
+    // 3. ESTRELLA MORADA: Líderes Inspiradores Que Movilizan
+    if (cat.includes('lider') || cat.includes('líder') || cat.includes('evaluacion inversa') || 
+        cat.includes('jefe inmediato') || cat.includes('movilizan')) {
+      return { img: 'img/estrella-morada.png', color: '#7c3aed' };
+    }
+
+    // 4. ESTRELLA AMARILLA: Colaboradores Estrella / Reconocimientos Generales
+    return { img: 'img/estrella-amarilla.png', color: '#eab308' };
+  }
+
+  function buscar() {
+    const cedula = document.getElementById('cedula').value.trim();
+    const resultado = document.getElementById('resultado');
+    const error = document.getElementById('error');
+
+    resultado.innerHTML = '';
+    error.innerHTML = '';
+
+    // Validación de campo vacío
+    if (!cedula) {
+      error.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Por favor, ingresa un número de documento.';
+      return;
+    }
+
+    // Búsqueda en data.json
+    const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
+
+    if (!persona) {
+      error.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> No se encontraron registros para este documento.';
+      return;
+    }
+
+    const mensaje = 'Gracias por tu compromiso y participación. Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
+
+    // Filtrar cadenas vacías ("") del arreglo de categorías
+    const categoriasValidas = (persona.categorias || []).filter(c => c && c.trim() !== '');
+
+    let categoriasHTML = '';
+    if (categoriasValidas.length > 0) {
+      categoriasValidas.forEach(cat => {
+        const estrella = obtenerEstrella(cat);
+        categoriasHTML += `
+          <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
+            <img src="${estrella.img}" alt="Estrella" class="star-badge-icon" onerror="this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png'">
+            <span>${cat}</span>
+          </div>
+        `;
+      });
+    } else {
+      categoriasHTML = '<p style="color: var(--text-muted); font-size: 0.85rem;">Sin categorías registradas.</p>';
+    }
+
+    // Renderizar tarjeta de resultados
+    resultado.innerHTML = `
+      <div class="results-grid">
+        <div class="left-col">
+          <section class="user-profile">
+            <div class="user-info">
+              <span class="user-label">Nombre:</span>
+              <span class="user-value">${persona.nombre}</span>
+            </div>
+            <div class="user-info">
+              <span class="user-label">Cargo:</span>
+              <span class="user-value">${persona.cargo}</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="right-col">
+          <section class="stars-hero">
+            <div class="stars-title">ESTRELLAS ACUMULADAS</div>
+            <div class="stars-score">
+              <span class="star-icon">⭐</span>
+              <span class="score-number">${persona.total}</span>
+            </div>
+            <p class="stars-description">${mensaje}</p>
+          </section>
+        </div>
+
+        <div class="col-full">
+          <section class="badges-section">
+            <h2 class="section-title">Categorías reconocidas:</h2>
+            <div class="badges-grid">
+              ${categoriasHTML}
+            </div>
+          </section>
+        </div>
+      </div>
+    `;
+  }
+</script>
 
 </body>
 </html>
