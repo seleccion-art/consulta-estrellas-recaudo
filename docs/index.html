@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta de Estrellas - Recaudo Bogotá</title>
+  <title>Consulta de Estrellas – Recaudo Bogotá</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,69 +11,32 @@
 
   <main class="app-card">
     
-    <!-- Encabezado Corporativo (usando la imagen de tu carpeta img) -->
+    <!-- Encabezado Corporativo -->
     <header class="card-header">
-      <img src="img/logo.png" alt="Misión Excelencia RB" class="header-logo-img" onerror="this.onerror=null; this.src='img/mision-excelencia.png';">
+      <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="header-logo-img">
       <h1 class="header-title">CONSULTA DE ESTRELLAS</h1>
       <p class="company-name">Recaudo Bogotá</p>
     </header>
 
     <div class="card-body">
       
-      <!-- Izquierda: Búsqueda y Datos -->
-      <div class="left-col" style="display: flex; flex-direction: column; gap: 20px;">
-        <form class="search-form" onsubmit="event.preventDefault();">
-          <label for="doc-input" class="input-label">Número de documento</label>
-          <div class="input-group">
-            <i class="fa-solid fa-id-card input-icon"></i>
-            <input type="text" id="doc-input" value="1030659434" placeholder="Ingrese número de documento">
-          </div>
-          <button type="submit" class="btn-primary">
-            <i class="fa-solid fa-magnifying-glass"></i> Consultar
-          </button>
-        </form>
-
-        <section class="user-profile">
-          <div class="user-info">
-            <span class="user-label">Nombre:</span>
-            <span class="user-value">Zambrano Ortigoza Wilmer Andres</span>
-          </div>
-          <div class="user-info">
-            <span class="user-label">Cargo:</span>
-            <span class="user-value">AUXILIAR DE INVENTARIOS</span>
-          </div>
-        </section>
+      <!-- Formulario de Búsqueda -->
+      <div class="search-form">
+        <label for="cedula" class="input-label">Número de documento</label>
+        <div class="input-group">
+          <i class="fa-solid fa-id-card input-icon"></i>
+          <input type="text" id="cedula" placeholder="Ingresa tu cédula">
+        </div>
+        <button type="button" onclick="buscar()" class="btn-primary">
+          <i class="fa-solid fa-magnifying-glass"></i> Consultar
+        </button>
       </div>
 
-      <!-- Derecha: Métrica de Estrellas -->
-      <div class="right-col">
-        <section class="stars-hero">
-          <div class="stars-title">ESTRELLAS</div>
-          <div class="stars-score">
-            <span class="star-icon">⭐</span>
-            <span class="score-number">6</span>
-          </div>
-          <p class="stars-description">
-            Gracias por tu compromiso y participación. Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.
-          </p>
-        </section>
-      </div>
+      <!-- Mensaje de Error / Campo Vacío -->
+      <div id="error" class="error-message"></div>
 
-      <!-- Abajo: Categorías (2 columnas en PC) -->
-      <div class="col-full">
-        <section class="badges-section">
-          <h2 class="section-title">Categorías reconocidas:</h2>
-          
-          <div class="badges-grid">
-            <div class="badge"><i class="fa-solid fa-circle-check"></i> Capacitación gobierno corporativo 2025</div>
-            <div class="badge"><i class="fa-solid fa-circle-check"></i> Capacitación sarlaft 2025</div>
-            <div class="badge"><i class="fa-solid fa-circle-check"></i> Curso de prevención de acoso laboral y sexual 2025</div>
-            <div class="badge"><i class="fa-solid fa-circle-check"></i> Curso de seguridad de la información 2025</div>
-            <div class="badge"><i class="fa-solid fa-circle-check"></i> Equidad diversidad e inclusión 2025</div>
-            <div class="badge"><i class="fa-solid fa-circle-check"></i> Reinducción hse 2025</div>
-          </div>
-        </section>
-      </div>
+      <!-- Contenedor Dinámico de Resultados -->
+      <div id="resultado"></div>
 
     </div>
 
@@ -83,6 +46,89 @@
     </footer>
 
   </main>
+
+  <script>
+    let datos = [];
+
+    // Cargar base de datos desde data.json
+    fetch('data.json')
+      .then(res => res.json())
+      .then(json => datos = json)
+      .catch(err => console.error('Error al cargar data.json:', err));
+
+    function buscar() {
+      const cedula = document.getElementById('cedula').value.trim();
+      const resultado = document.getElementById('resultado');
+      const error = document.getElementById('error');
+
+      resultado.innerHTML = '';
+      error.innerHTML = '';
+
+      // Validar si el input está vacío
+      if (!cedula) {
+        error.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Por favor, ingresa un número de documento.';
+        return;
+      }
+
+      // Buscar coincidencia en data.json
+      const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
+
+      if (!persona) {
+        error.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> No se encontraron registros para este documento.';
+        return;
+      }
+
+      const mensaje = 'Gracias por tu compromiso y participación. Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
+
+      // Generar Badges / Chips dinámicos para las categorías
+      let categoriasHTML = '';
+      if (persona.categorias && persona.categorias.length > 0) {
+        persona.categorias.forEach(cat => {
+          categoriasHTML += `<div class="badge"><i class="fa-solid fa-circle-check"></i> ${cat}</div>`;
+        });
+      } else {
+        categoriasHTML = '<p class="no-data">Sin categorías registradas.</p>';
+      }
+
+      // Inyectar la interfaz responsiva de 2 columnas con los datos reales
+      resultado.innerHTML = `
+        <div class="results-grid">
+          <div class="left-col">
+            <section class="user-profile">
+              <div class="user-info">
+                <span class="user-label">Nombre:</span>
+                <span class="user-value">${persona.nombre}</span>
+              </div>
+              <div class="user-info">
+                <span class="user-label">Cargo:</span>
+                <span class="user-value">${persona.cargo}</span>
+              </div>
+            </section>
+          </div>
+
+          <div class="right-col">
+            <section class="stars-hero">
+              <div class="stars-title">ESTRELLAS</div>
+              <div class="stars-score">
+                <span class="star-icon">⭐</span>
+                <span class="score-number">${persona.total}</span>
+              </div>
+              <p class="stars-description">${mensaje}</p>
+            </section>
+          </div>
+
+          <div class="col-full">
+            <section class="badges-section">
+              <h2 class="section-title">Categorías reconocidas:</h2>
+              <div class="badges-grid">
+                ${categoriasHTML}
+              </div>
+            </section>
+          </div>
+        </div>
+      `;
+    }
+  </script>
 
 </body>
 </html>
