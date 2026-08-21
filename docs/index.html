@@ -2,86 +2,335 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Consulta de Estrellas – Recaudo Bogotá</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Estrellas - Recaudo Bogotá</title>
+  <!-- Íconos de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary-navy: #0f172a;
+      --secondary-blue: #1e3a8a;
+      --accent-green: #10b981;
+      --accent-green-hover: #059669;
+      --bg-body: #f1f5f9;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --badge-bg: #f8fafc;
+      --badge-border: #cbd5e1;
+    }
 
-  <link rel="stylesheet" href="styles.css">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-body);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    /* Tarjeta Principal */
+    .app-card {
+      background: var(--card-bg);
+      width: 100%;
+      max-width: 420px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    /* Header Corporativo */
+    .card-header {
+      background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
+      color: #ffffff;
+      padding: 24px 20px;
+      text-align: center;
+      border-bottom: 4px solid #3b82f6;
+    }
+
+    .brand-logo {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .star-accent { color: #f59e0b; }
+    
+    .brand-sub { 
+      display: block; 
+      font-size: 0.72rem; 
+      color: #93c5fd; 
+      letter-spacing: 1.5px;
+      margin-top: 2px;
+    }
+
+    .header-title {
+      font-size: 1.25rem;
+      margin-top: 12px;
+      font-weight: 700;
+    }
+
+    .company-name {
+      font-size: 0.8rem;
+      color: #cbd5e1;
+      margin-top: 2px;
+    }
+
+    /* Cuerpo */
+    .card-body { padding: 20px; }
+
+    /* Formulario */
+    .search-form { margin-bottom: 20px; }
+
+    .input-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 12px;
+    }
+
+    .input-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 12px 10px 38px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .input-group input:focus { 
+      border-color: var(--secondary-blue); 
+    }
+
+    .btn-primary {
+      width: 100%;
+      background-color: var(--accent-green);
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-primary:hover { background-color: var(--accent-green-hover); }
+
+    /* Tarjeta de Datos del Usuario */
+    .user-profile {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 20px;
+    }
+
+    .user-info { 
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 6px; 
+      font-size: 0.82rem; 
+    }
+
+    .user-info:last-child { margin-bottom: 0; }
+    .user-label { color: var(--text-muted); font-weight: 600; }
+    .user-value { color: var(--text-main); font-weight: 700; text-align: right; }
+
+    /* Hero Estrellas */
+    .stars-hero {
+      background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .stars-hero::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--secondary-blue);
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+
+    .stars-title { 
+      font-size: 0.85rem; 
+      font-weight: 800; 
+      color: #1e40af; 
+      letter-spacing: 1px; 
+    }
+
+    .stars-score {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 4px 0;
+    }
+
+    .star-icon { font-size: 1.8rem; }
+    .score-number { font-size: 2.2rem; font-weight: 900; color: #1e3a8a; }
+
+    .stars-description {
+      font-size: 0.78rem;
+      color: #1e3a8a;
+      line-height: 1.45;
+    }
+
+    /* Badges de Categorías */
+    .section-title {
+      font-size: 0.88rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .badges-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .badge {
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      color: #334155;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge i { 
+      color: var(--accent-green); 
+      font-size: 0.85rem; 
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    .card-footer {
+      text-align: center;
+      padding: 12px;
+      background: #f8fafc;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+  </style>
 </head>
-
 <body>
 
-  <div class="card">
-    <div class="header">
-      <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="logo">
-      <h1>CONSULTA DE ESTRELLAS</h1>
-      <p>Recaudo Bogotá</p>
+  <main class="app-card">
+    
+    <!-- Encabezado Corporativo -->
+    <header class="card-header">
+      <div class="brand-logo">
+        MISIÓ<span class="star-accent">N⭐</span>
+      </div>
+      <span class="brand-sub">EXCELENCIA RB</span>
+      <h1 class="header-title">CONSULTA DE ESTRELLAS</h1>
+      <p class="company-name">Recaudo Bogotá</p>
+    </header>
+
+    <div class="card-body">
+      
+      <!-- Formulario de Consulta -->
+      <form class="search-form" onsubmit="event.preventDefault();">
+        <label for="doc-input" class="input-label">Número de documento</label>
+        <div class="input-group">
+          <i class="fa-solid fa-id-card input-icon"></i>
+          <input type="text" id="doc-input" value="1030659434" placeholder="Ingrese número de documento">
+        </div>
+        <button type="submit" class="btn-primary">
+          <i class="fa-solid fa-magnifying-glass"></i> Consultar
+        </button>
+      </form>
+
+      <!-- Datos del Colaborador -->
+      <section class="user-profile">
+        <div class="user-info">
+          <span class="user-label">Nombre:</span>
+          <span class="user-value">Zambrano Ortigoza Wilmer Andres</span>
+        </div>
+        <div class="user-info">
+          <span class="user-label">Cargo:</span>
+          <span class="user-value">AUXILIAR DE INVENTARIOS</span>
+        </div>
+      </section>
+
+      <!-- Saldo de Estrellas -->
+      <section class="stars-hero">
+        <div class="stars-title">ESTRELLAS</div>
+        <div class="stars-score">
+          <span class="star-icon">⭐</span>
+          <span class="score-number">6</span>
+        </div>
+        <p class="stars-description">
+          Gracias por tu compromiso y participación. Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.
+        </p>
+      </section>
+
+      <!-- Categorías Reconocidas -->
+      <section class="badges-section">
+        <h2 class="section-title">Categorías reconocidas:</h2>
+        
+        <div class="badges-list">
+          <div class="badge"><i class="fa-solid fa-circle-check"></i> Capacitación gobierno corporativo 2025</div>
+          <div class="badge"><i class="fa-solid fa-circle-check"></i> Capacitación sarlaft 2025</div>
+          <div class="badge"><i class="fa-solid fa-circle-check"></i> Curso de prevención de acoso laboral y sexual 2025</div>
+          <div class="badge"><i class="fa-solid fa-circle-check"></i> Curso de seguridad de la información 2025</div>
+          <div class="badge"><i class="fa-solid fa-circle-check"></i> Equidad diversidad e inclusión 2025</div>
+          <div class="badge"><i class="fa-solid fa-circle-check"></i> Reinducción hse 2025</div>
+        </div>
+      </section>
+
     </div>
 
-    <div class="content">
-      <label for="cedula">Número de documento</label>
-      <input type="text" id="cedula" placeholder="Ingresa tu cédula">
-
-      <button onclick="buscar()">Consultar</button>
-
-      <div id="resultado" class="resultado"></div>
-      <div id="error" class="error"></div>
-    </div>
-
-    <footer>
-      Información tomada de la base oficial de reconocimientos
+    <!-- Pie de página -->
+    <footer class="card-footer">
+      <i class="fa-solid fa-circle-info"></i> Información tomada de la base oficial de reconocimientos
     </footer>
-  </div>
 
-<script>
-let datos = [];
-
-fetch('data.json')
-  .then(res => res.json())
-  .then(json => datos = json);
-
-function buscar() {
-  const cedula = document.getElementById('cedula').value.trim();
-  const resultado = document.getElementById('resultado');
-  const error = document.getElementById('error');
-
-  resultado.innerHTML = '';
-  error.innerHTML = '';
-
-  const persona = datos.find(p =>
-    String(p.cedula).trim() === String(cedula).trim()
-  );
-
-  if (!persona) {
-    error.textContent = 'No se encontraron registros para este documento.';
-    return;
-  }
-
- let mensaje = 'Gracias por tu compromiso y participación. ' +
-  'Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo ' +
-  'para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
-
-
-  let categoriasHTML = '';
-  persona.categorias.forEach(cat => {
-    categoriasHTML += `<span class="chip">${cat}</span>`;
-  });
-
-  resultado.innerHTML = `
-    <p><strong>Nombre:</strong> ${persona.nombre}</p>
-    <p><strong>Cargo:</strong> ${persona.cargo}</p>
-
-    <div class="estrellas-box">
-      <div class="estrellas-numero">ESTRELLAS ⭐ ${persona.total}</div>
-      <div class="mensaje">${mensaje}</div>
-    </div>
-
-    <p><strong>Categorías reconocidas:</strong></p>
-    <div class="categorias">
-      ${categoriasHTML}
-    </div>
-  `;
-}
-</script>
+  </main>
 
 </body>
 </html>
