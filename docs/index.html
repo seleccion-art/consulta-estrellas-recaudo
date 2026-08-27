@@ -2,166 +2,209 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>Misión Excelencia RB – Recaudo Bogotá</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta de Estrellas – Recaudo Bogotá</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <main class="app-card">
+  <div class="card">
     
-    <!-- Encabezado Corporativo -->
-    <header class="card-header">
-      <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="header-logo-img">
-      <h1 class="header-title">CONSULTA DE ESTRELLAS</h1>
-      <p class="company-name">Recaudo Bogotá</p>
-    </header>
+    <!-- ENCABEZADO -->
+    <div class="header">
+      <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="logo">
+      <h1>MISIÓN EXCELENCIA RB</h1>
+      <p class="subtitle">Plan de Reconocimiento Corporativo 2025</p>
+      <p class="lema">"Nos esforzamos para que las cosas pasen"</p>
+    </div>
 
-    <div class="card-body">
-      
-      <!-- Formulario de Búsqueda -->
-      <div class="search-form">
-        <label for="cedula" class="input-label">Número de documento</label>
-        <div class="input-group">
-          <i class="fa-solid fa-id-card input-icon"></i>
-          <input type="text" id="cedula" placeholder="Ingresa tu cédula">
+    <div class="content">
+
+      <!-- PASO 1: INDUCCIÓN AL PROGRAMA -->
+      <section class="section-container">
+        <h2 class="section-header-title">1. ¿Qué es Misión Excelencia RB?</h2>
+        <div class="info-box">
+          <p>
+            Es el programa de reconocimiento de <strong>Recaudo Bogotá S.A.S.</strong> diseñado para visibilizar, valorar y premiar el esfuerzo diario de nuestros colaboradores en las áreas operativas y administrativas.
+          </p>
+          <p style="margin-top: 8px;">
+            Su objetivo principal es fortalecer nuestra cultura organizacional, fomentar el orgullo de pertenencia y premiar la vivencia de nuestros valores corporativos, la agilidad, la equidad de género y el liderazgo transformacional.
+          </p>
         </div>
-        <button type="button" onclick="buscar()" class="btn-primary">
-          <i class="fa-solid fa-magnifying-glass"></i> Consultar
-        </button>
-      </div>
+      </section>
 
-      <!-- Mensaje de Error / Campo Vacío -->
-      <div id="error" class="error-message"></div>
+      <!-- PASO 2: SIMBOLOGÍA DE LAS ESTRELLAS -->
+      <section class="section-container">
+        <h2 class="section-header-title">2. ¿Qué simboliza cada estrella?</h2>
+        <p class="section-desc">Cada estrella obtenida representa un pilar fundamental de nuestra gestión y equivale a <strong>1.000 puntos en la plataforma RB Contigo</strong> para redimir en comercios aliados.</p>
+        
+        <div class="pilares-grid">
+          
+          <!-- ESTRELLA AZUL -->
+          <div class="pilar-card pilar-azul">
+            <img src="img/Esencia RB (2).png" alt="Esencia RB" class="pilar-icon">
+            <div class="pilar-info">
+              <h4>Estrella Azul: Esencia RB</h4>
+              <p>Simboliza nuestra cultura y valores. Premia la integridad, la honestidad, el respeto, la creatividad, la equidad de género y la vocación de servicio excepcional.</p>
+            </div>
+          </div>
 
-      <!-- Contenedor Dinámico de Resultados -->
-      <div id="resultado"></div>
+          <!-- ESTRELLA ROJA -->
+          <div class="pilar-card pilar-rojo">
+            <img src="img/Aprendemos y Aportamos en RB.png" alt="Aprendemos y Aportamos RB" class="pilar-icon">
+            <div class="pilar-info">
+              <h4>Estrella Roja: Aprendemos y Aportamos</h4>
+              <p>Simboliza el crecimiento y la agilidad. Premia la participación destacada en capacitaciones, cumplimiento de mallas formativas (UBITS, Semilleros) e ideas innovadoras.</p>
+            </div>
+          </div>
+
+          <!-- ESTRELLA MORADA -->
+          <div class="pilar-card pilar-morado">
+            <img src="img/Líderes Inspiradores Que Movilizan.png" alt="Líderes Inspiradores" class="pilar-icon">
+            <div class="pilar-info">
+              <h4>Estrella Morada: Líderes Inspiradores</h4>
+              <p>Simboliza el liderazgo transformacional. Premia la gestión empática de equipos, el impacto positivo en el clima laboral y la participación activa en comités (Equipares, COPASST, Brigadistas).</p>
+            </div>
+          </div>
+
+          <!-- ESTRELLA AMARILLA -->
+          <div class="pilar-card pilar-amarillo">
+            <img src="img/Colaboradores Estrella.png" alt="Colaboradores Estrella" class="pilar-icon">
+            <div class="pilar-info">
+              <h4>Estrella Amarilla: Colaboradores(as) Estrella</h4>
+              <p>Simboliza el alto desempeño. Premia los resultados superiores en las Evaluaciones de Desempeño y el cumplimiento destacado de indicadores operativos y administrativos (KPIs).</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- PASO 3: CONSULTA DE CÉDULA -->
+      <section class="section-container search-section">
+        <h2 class="section-header-title">3. Consulta tus reconocimientos</h2>
+        <p class="section-desc">Ingresa tu número de documento a continuación para consultar tus estrellas acumuladas y categorías reconocidas:</p>
+        
+        <div class="search-box">
+          <label for="cedula">Número de documento</label>
+          <input type="text" id="cedula" placeholder="Ingresa tu número de cédula">
+          <button onclick="buscar()">Consultar Estrellas</button>
+        </div>
+
+        <div id="error" class="error"></div>
+        <div id="resultado" class="resultado"></div>
+      </section>
 
     </div>
 
-    <!-- Pie de página -->
-    <footer class="card-footer">
-      <i class="fa-solid fa-shield-halved"></i> Información tomada de la base oficial de reconocimientos
+    <footer>
+      Información tomada de la base oficial de reconocimientos | Recaudo Bogotá S.A.S.
     </footer>
+  </div>
 
-  </main>
+<script>
+let datos = [];
 
-  <script>
-  let datos = [];
+fetch('data.json')
+  .then(res => res.json())
+  .then(json => datos = json)
+  .catch(err => console.error('Error al cargar data.json:', err));
 
-  fetch('data.json')
-    .then(res => res.json())
-    .then(json => datos = json)
-    .catch(err => console.error('Error al cargar data.json:', err));
+function obtenerEstrella(categoria) {
+  const cat = categoria.toLowerCase().trim();
 
-  function obtenerEstrella(categoria) {
-    const cat = categoria.toLowerCase().trim();
-
-    // 1. ESTRELLA AZUL: ESENCIA RB
-    // Palabras clave: servicio rb, equidad, diversidad, inclusión, esencia, integridades, adn
-    if (cat.includes('servicio rb') || cat.includes('equidad') || cat.includes('diversidad') || 
-        cat.includes('inclusión') || cat.includes('esencia') || cat.includes('adn') || 
-        cat.includes('humano') || cat.includes('valores')) {
-      return { img: 'img/estrella-azul.png', color: '#0284c7' };
-    }
-
-    // 2. ESTRELLA ROJA: APRENDEMOS Y APORTAMOS EN RB
-    // Palabras clave: capacitación, curso, hse, sarlaft, seguridad, malla, ubits, semillero, brigadistas, acoso, compras
-    if (cat.includes('capacitación') || cat.includes('capacitacion') || cat.includes('curso') || 
-        cat.includes('hse') || cat.includes('sarlaft') || cat.includes('seguridad') || 
-        cat.includes('malla') || cat.includes('ubits') || cat.includes('semillero') || 
-        cat.includes('brigadistas') || cat.includes('acoso') || cat.includes('compras') || cat.includes('gobierno')) {
-      return { img: 'img/estrella-roja.png', color: '#dc2626' };
-    }
-
-    // 3. ESTRELLA MORADA: LÍDERES INSPIRADORES QUE MOVILIZAN
-    // Palabras clave: lider, líder, jefes, evaluacion, movilizan, inverso
-    if (cat.includes('lider') || cat.includes('líder') || cat.includes('jefe') || cat.includes('movilizan')) {
-      return { img: 'img/estrella-morada.png', color: '#7c3aed' };
-    }
-
-    // 4. ESTRELLA AMARILLA: COLABORADORES ESTRELLA RB
-    // Palabras clave: influencia positiva, sostenibilidad, antiguedad, antigüedades, desempeño, reconocimiento general
-    return { img: 'img/estrella-amarilla.png', color: '#eab308' };
+  // 1. ESTRELLA AZUL: ESENCIA RB
+  if (cat.includes('integridad') || cat.includes('honestidad') || cat.includes('respeto') || 
+      cat.includes('equidad') || cat.includes('excelencia') || cat.includes('creatividad') || 
+      cat.includes('esencia')) {
+    return { img: 'img/Esencia RB (2).png', color: '#0284c7' };
   }
 
-  function buscar() {
-    const cedula = document.getElementById('cedula').value.trim();
-    const resultado = document.getElementById('resultado');
-    const error = document.getElementById('error');
+  // 2. ESTRELLA ROJA: APRENDEMOS Y APORTAMOS EN RB
+  if (cat.includes('capacitación') || cat.includes('capacitacion') || cat.includes('curso') || 
+      cat.includes('malla') || cat.includes('ubits') || cat.includes('semillero') || 
+      cat.includes('escuela de líderes') || cat.includes('p. talentos') || cat.includes('talento') || 
+      cat.includes('servicio rb') || cat.includes('reconversión') || cat.includes('reconversion') || 
+      cat.includes('sarlaft') || cat.includes('hse') || cat.includes('acoso') || 
+      cat.includes('seguridad') || cat.includes('gobierno corporativo') || cat.includes('compras')) {
+    return { img: 'img/Aprendemos y Aportamos en RB.png', color: '#dc2626' };
+  }
 
-    resultado.innerHTML = '';
-    error.innerHTML = '';
+  // 3. ESTRELLA MORADA: LÍDERES INSPIRADORES
+  if (cat.includes('brigadista') || cat.includes('proyectos especiales') || cat.includes('convivencia') || 
+      cat.includes('copasst') || cat.includes('equipares') || cat.includes('clima') || 
+      cat.includes('influencia positiva') || cat.includes('antiguedad') || cat.includes('antigüedad') || 
+      cat.includes('sostenibilidad') || cat.includes('eva. inversa') || cat.includes('encuesta') || 
+      cat.includes('directivos') || cat.includes('lider') || cat.includes('líder') || cat.includes('jefe')) {
+    return { img: 'img/Líderes Inspiradores Que Movilizan.png', color: '#7c3aed' };
+  }
 
-    if (!cedula) {
-      error.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Por favor, ingresa un número de documento.';
-      return;
-    }
+  // 4. ESTRELLA AMARILLA: COLABORADORES ESTRELLA
+  return { img: 'img/Colaboradores Estrella.png', color: '#eab308' };
+}
 
-    const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
+function buscar() {
+  const cedula = document.getElementById('cedula').value.trim();
+  const resultado = document.getElementById('resultado');
+  const error = document.getElementById('error');
 
-    if (!persona) {
-      error.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> No se encontraron registros para este documento.';
-      return;
-    }
+  resultado.innerHTML = '';
+  error.innerHTML = '';
 
-    const mensaje = 'Gracias por tu compromiso y participación. Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
+  if (!cedula) {
+    error.textContent = 'Por favor, ingresa tu número de documento.';
+    return;
+  }
 
-    // Filtra elementos vacíos como "" o espacios en blanco
-    const categoriasValidas = (persona.categorias || []).filter(c => c && c.trim() !== '');
+  const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
 
-    let categoriasHTML = '';
-    if (categoriasValidas.length > 0) {
-      categoriasValidas.forEach(cat => {
-        const estrella = obtenerEstrella(cat);
-        categoriasHTML += `
-          <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
-            <img src="${estrella.img}" alt="Estrella" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
-            <span>${cat}</span>
-          </div>
-        `;
-      });
-    } else {
-      categoriasHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin categorías registradas.</p>';
-    }
+  if (!persona) {
+    error.textContent = 'No se encontraron registros para este número de documento.';
+    return;
+  }
 
-    resultado.innerHTML = `
-      <div class="results-grid">
-        <div class="left-col">
-          <section class="user-profile">
-            <div class="user-info">
-              <span class="user-label">Nombre:</span>
-              <span class="user-value">${persona.nombre}</span>
-            </div>
-            <div class="user-info">
-              <span class="user-label">Cargo:</span>
-              <span class="user-value">${persona.cargo}</span>
-            </div>
-          </section>
+  const mensaje = '¡Felicitaciones por tus logros! Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
+
+  const categoriasValidas = (persona.categorias || []).filter(c => c && c.trim() !== '');
+
+  let categoriasHTML = '';
+  if (categoriasValidas.length > 0) {
+    categoriasValidas.forEach(cat => {
+      const estrella = obtenerEstrella(cat);
+      categoriasHTML += `
+        <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
+          <img src="${estrella.img}" alt="Estrella" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
+          <span>${cat}</span>
         </div>
+      `;
+    });
+  } else {
+    categoriasHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin categorías registradas.</p>';
+  }
 
-        <div class="right-col">
-          <section class="stars-hero">
-            <div class="stars-title">ESTRELLAS ACUMULADAS</div>
-            <div class="stars-score">
-              <span class="score-number">${persona.total}</span>
-            </div>
-            <p class="stars-description">${mensaje}</p>
-          </section>
-        </div>
-
-        <div class="col-full">
-          <section class="badges-section">
-            <h2 class="section-title">Categorías reconocidas:</h2>
-            <div class="badges-grid">
-              ${categoriasHTML}
-            </div>
-          </section>
-        </div>
+  resultado.innerHTML = `
+    <div class="user-card-header">
+      <div class="user-data">
+        <p><strong>Nombre:</strong> ${persona.nombre}</p>
+        <p><strong>Cargo:</strong> ${persona.cargo}</p>
       </div>
-    `;
-  }
+      <div class="estrellas-box">
+        <div class="estrellas-numero">ESTRELLAS ⭐ ${persona.total}</div>
+      </div>
+    </div>
+
+    <div class="mensaje-box">${mensaje}</div>
+
+    <div class="badges-section">
+      <p class="section-title">Categorías reconocidas a la fecha:</p>
+      <div class="categorias-grid">
+        ${categoriasHTML}
+      </div>
+    </div>
+  `;
+}
 </script>
 
 </body>
