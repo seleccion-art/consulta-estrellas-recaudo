@@ -1,10 +1,10 @@
 :root {
-  --azul-principal: #0B4FA3;
-  --azul-header: #eef5fc;
-  --azul-fondo: #EAF2FF;
+  --morado-principal: #4f46e5;
+  --morado-oscuro: #3730a3;
+  --morado-fondo: #f5f3ff;
   --verde: #2FB36F;
   --fondo: #F4F6F9;
-  --texto: #333;
+  --texto: #1e293b;
   --gris: #6B7280;
   --blanco: #ffffff;
 }
@@ -33,12 +33,12 @@ body {
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
-/* HEADER */
+/* HEADER CON DEGRADADO MORADO */
 .header {
-  background: var(--azul-header);
+  background: linear-gradient(135deg, #eeeefb 0%, #e0e7ff 50%, #ede9fe 100%);
   padding: 26px 22px 20px 22px;
   text-align: center;
-  border-bottom: 4px solid var(--azul-principal);
+  border-bottom: 4px solid var(--morado-principal);
 }
 
 .logo {
@@ -52,7 +52,7 @@ body {
   font-size: 24px;
   margin: 0;
   font-weight: 800;
-  color: var(--azul-principal);
+  color: var(--morado-oscuro);
   letter-spacing: 0.5px;
 }
 
@@ -60,14 +60,14 @@ body {
   font-size: 14px;
   margin: 4px 0 2px 0;
   font-weight: 700;
-  color: #1F2937;
+  color: #312e81;
 }
 
 .header .lema {
   font-size: 12px;
   margin: 0;
   font-style: italic;
-  color: #4b5563;
+  color: #4338ca;
 }
 
 /* CONTENT */
@@ -81,11 +81,11 @@ body {
 
 .section-header-title {
   font-size: 17px;
-  color: var(--azul-principal);
-  margin: 0 0 10px 0;
+  color: var(--morado-oscuro);
+  margin: 0 0 12px 0;
   font-weight: 700;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 4px;
+  border-bottom: 2px solid #e0e7ff;
+  padding-bottom: 6px;
 }
 
 .section-desc {
@@ -98,7 +98,7 @@ body {
 /* INDUCCIÓN */
 .info-box {
   background: #f8fafc;
-  border-left: 4px solid var(--azul-principal);
+  border-left: 4px solid var(--morado-principal);
   padding: 14px 16px;
   border-radius: 8px;
 }
@@ -188,8 +188,8 @@ input {
 }
 
 input:focus {
-  border-color: var(--azul-principal);
-  box-shadow: 0 0 0 3px rgba(11, 79, 163, 0.15);
+  border-color: var(--morado-principal);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
 }
 
 button {
@@ -230,8 +230,8 @@ button:hover {
 }
 
 .estrellas-box {
-  background: var(--azul-fondo);
-  border: 2px solid var(--azul-principal);
+  background: var(--morado-fondo);
+  border: 2px solid var(--morado-principal);
   padding: 10px 18px;
   border-radius: 10px;
   text-align: center;
@@ -240,7 +240,7 @@ button:hover {
 .estrellas-numero {
   font-size: 18px;
   font-weight: 800;
-  color: var(--azul-principal);
+  color: var(--morado-oscuro);
 }
 
 .mensaje-box {
