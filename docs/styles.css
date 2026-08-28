@@ -165,7 +165,7 @@ body {
   margin: 28px 0;
 }
 
-/* SECCIÓN BÚSQUEDA */
+/* SECCIÓN BÚSQUEDA Y BOTONES */
 .search-box {
   background: #f8fafc;
   padding: 20px;
@@ -236,7 +236,7 @@ input:focus {
   background-color: var(--gris-hover);
 }
 
-/* TARJETA DE PERFIL */
+/* TARJETA DE PERFIL Y CABECERA */
 .profile-card {
   background: #ffffff;
   border: 1.5px solid #e2e8f0;
@@ -253,7 +253,6 @@ input:focus {
   border-bottom: 1px dashed #e2e8f0;
 }
 
-/* ETIQUETA ALINEADA A LA DERECHA SIN ESTRELLAS */
 .profile-top-bar {
   display: flex;
   justify-content: flex-end;
@@ -281,7 +280,7 @@ input:focus {
   line-height: 1.2;
 }
 
-/* CAJA DE ESTRELLAS CON EL VALOR AL LADO */
+/* CAJA HORIZONTAL DE ESTRELLAS */
 .stars-inline-box {
   display: flex;
   align-items: center;
@@ -323,6 +322,7 @@ input:focus {
   color: #581c87;
 }
 
+/* MENSAJE E INSIGNIAS */
 .mensaje-box {
   background: #f0fdf4;
   border: 1px solid #bbf7d0;
@@ -441,4 +441,20 @@ footer {
   font-size: 12px;
   color: #94a3b8;
   border-top: 1px solid #f1f5f9;
+}
+
+/* ANIMACIÓN DE ENTRADA SUAVE */
+.fade-in {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
