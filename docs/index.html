@@ -11,9 +11,9 @@
 
   <div class="card">
     
-    <!-- ENCABEZADO CON DEGRADADO MORADO ELEGANTE Y ESTÉTICO -->
+    <!-- ENCABEZADO CON DEGRADADO Y LOGO -->
     <div class="header">
-      <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="logo">
+      <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="logo" onerror="this.onerror=null; this.style.display='none';">
       <h1>MISIÓN EXCELENCIA RB</h1>
       <p class="subtitle">Plan de Reconocimiento Corporativo 2026</p>
       <p class="lema">"Nos esforzamos para que las cosas pasen"</p>
@@ -26,7 +26,7 @@
         <h2 class="section-header-title">Nuestro Programa Misión Excelencia RB</h2>
         <div class="info-box">
           <p>
-            Misión Excelencia RB es la estrategia que tenemos como empresa en <strong>Recaudo Bogotá S.A.S.</strong> para visibilizar, valorar y premiar tu compromiso y esfuerzo diario, tanto en las áreas operativas como administrativas. Con este programa fortalecemos nuestra cultura organizacional y reconocemos cómo vives nuestros valores, tu aprendizaje continuo, tu liderazgo y tu búsqueda de la excelencia a través de cuatro pilares representados por nuestras estrellas:
+            Misión Excelencia RB es la estrategia de <strong>Recaudo Bogotá S.A.S.</strong> para visibilizar, valorar y premiar tu compromiso diario. Reconocemos tu vivencia de valores, aprendizaje continuo, liderazgo y excelencia a través de nuestras cuatro estrellas:
           </p>
         </div>
       </section>
@@ -40,7 +40,7 @@
             <img src="img/Esencia RB.png" alt="Esencia RB" class="pilar-icon">
             <div class="pilar-info">
               <h4>Estrella Azul: Esencia RB</h4>
-              <p>Simboliza nuestra cultura y valores. Premia la integridad, la honestidad, el respeto, la creatividad, la equidad de género y tu vocación de servicio excepcional.</p>
+              <p>Premia la integridad, la honestidad, el respeto, la creatividad, la equidad de género y tu vocación de servicio.</p>
             </div>
           </div>
 
@@ -49,7 +49,7 @@
             <img src="img/Aprendemos y Aportamos en RB.png" alt="Aprendemos y Aportamos RB" class="pilar-icon">
             <div class="pilar-info">
               <h4>Estrella Roja: Aprendemos y Aportamos</h4>
-              <p>Simboliza tu crecimiento y agilidad. Premia tu participación destacada en capacitaciones, el cumplimiento de mallas formativas (UBITS, Semilleros) y tus ideas innovadoras.</p>
+              <p>Premia tu participación destacada en capacitaciones, mallas formativas y tus ideas innovadoras.</p>
             </div>
           </div>
 
@@ -58,7 +58,7 @@
             <img src="img/Lideres Inspiradores Que Movilizan.png" alt="Líderes Inspiradores" class="pilar-icon">
             <div class="pilar-info">
               <h4>Estrella Morada: Líderes Inspiradores</h4>
-              <p>Simboliza el liderazgo transformacional. Premia la gestión empática con tu equipo, tu impacto positivo en el clima laboral y tu participación activa en comités (Equipares, COPASST, Brigadistas).</p>
+              <p>Premia el liderazgo transformacional, la gestión empática y tu participación activa en comités.</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@
             <img src="img/Colaboradores Estrella.png" alt="Colaboradores Estrella" class="pilar-icon">
             <div class="pilar-info">
               <h4>Estrella Amarilla: Colaboradores(as) Estrella</h4>
-              <p>Simboliza tu alto desempeño. Premia tus resultados superiores en las Evaluaciones de Desempeño y el cumplimiento destacado de tus objetivos operativos y administrativos.</p>
+              <p>Premia tus resultados superiores en la Evaluación de Desempeño y el cumplimiento de objetivos.</p>
             </div>
           </div>
 
@@ -83,8 +83,11 @@
         
         <div class="search-box">
           <label for="cedula">Número de documento</label>
-          <input type="text" id="cedula" placeholder="Ingresa tu número de cédula">
-          <button onclick="buscar()">Consultar Estrellas</button>
+          <div class="input-group">
+            <input type="text" id="cedula" placeholder="Ingresa tu número de cédula" onkeyup="if(event.key==='Enter') buscar()">
+            <button id="btn-limpiar" class="btn-secondary" onclick="limpiar()" style="display: none;">Limpiar / Nueva Consulta</button>
+          </div>
+          <button id="btn-buscar" class="btn-primary" onclick="buscar()">Consultar Estrellas</button>
         </div>
 
         <div id="error" class="error"></div>
@@ -144,9 +147,11 @@ function obtenerEstrella(categoria) {
 }
 
 function buscar() {
-  const cedula = document.getElementById('cedula').value.trim();
+  const cedulaInput = document.getElementById('cedula');
+  const cedula = cedulaInput.value.trim();
   const resultado = document.getElementById('resultado');
   const error = document.getElementById('error');
+  const btnLimpiar = document.getElementById('btn-limpiar');
 
   resultado.innerHTML = '';
   error.innerHTML = '';
@@ -156,16 +161,25 @@ function buscar() {
     return;
   }
 
+  btnLimpiar.style.display = 'inline-block';
+
   const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
 
+  // CASO DE CÉDULA NO ENCONTRADA O SIN ESTRELLAS (MENSAJE MOTIVACIONAL CON LOGO)
   if (!persona) {
-    error.textContent = 'No se encontraron registros para este número de documento.';
+    resultado.innerHTML = `
+      <div class="empty-state-card">
+        <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="empty-logo" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
+        <h3>¡Tu momento de brillar está cerca!</h3>
+        <p>Aún no registras estrellas asignadas en el sistema, pero en <strong>Recaudo Bogotá S.A.S.</strong> confiamos en tu talento. Te invitamos a seguir dando lo mejor de ti, cumplir tus metas diarias y participar activamente en nuestras capacitaciones para que pronto recibas tus primeras estrellas de reconocimiento.</p>
+        <span class="motto-tag">"Nos esforzamos para que las cosas pasen"</span>
+      </div>
+    `;
     return;
   }
 
   const mensaje = '¡Felicitaciones por tus logros! Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
 
-  // Lectura compatible con la propiedad reconocimientos o categorias
   const listaReconocimientos = persona.reconocimientos || persona.categorias || [];
   const reconocimientosValidos = listaReconocimientos.filter(c => c && String(c).trim() !== '');
 
@@ -184,25 +198,35 @@ function buscar() {
     reconocimientosHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin reconocimientos registrados.</p>';
   }
 
+  // RENDERIZADO CON NOMBRE CENTRADO Y GRANDE
   resultado.innerHTML = `
-    <div class="user-card-header">
-      <div class="user-data">
-        <p><strong>Nombre:</strong> ${persona.nombre}</p>
+    <div class="profile-card">
+      <div class="profile-header-center">
+        <span class="profile-label">COLABORADOR(A) RECONOCIDO(A)</span>
+        <h2 class="profile-name">${persona.nombre}</h2>
+        <div class="estrellas-badge-large">
+          <span>ESTRELLAS</span> ⭐ <strong>${persona.total}</strong>
+        </div>
       </div>
-      <div class="estrellas-box">
-        <div class="estrellas-numero">ESTRELLAS ⭐ ${persona.total}</div>
-      </div>
-    </div>
 
-    <div class="mensaje-box">${mensaje}</div>
+      <div class="mensaje-box">${mensaje}</div>
 
-    <div class="badges-section">
-      <p class="section-title">Reconocimientos asignados a la fecha:</p>
-      <div class="categorias-grid">
-        ${reconocimientosHTML}
+      <div class="badges-section">
+        <p class="section-title">Reconocimientos asignados a la fecha:</p>
+        <div class="categorias-grid">
+          ${reconocimientosHTML}
+        </div>
       </div>
     </div>
   `;
+}
+
+function limpiar() {
+  document.getElementById('cedula').value = '';
+  document.getElementById('resultado').innerHTML = '';
+  document.getElementById('error').innerHTML = '';
+  document.getElementById('btn-limpiar').style.display = 'none';
+  document.getElementById('cedula').focus();
 }
 </script>
 
