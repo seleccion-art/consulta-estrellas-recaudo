@@ -21,7 +21,7 @@
 
     <div class="content">
 
-      <!-- INDUCCIÓN AL PROGRAMA (TEXTO ADAPTADO PARA EL COLABORADOR) -->
+      <!-- INDUCCIÓN AL PROGRAMA -->
       <section class="section-container">
         <h2 class="section-header-title">Nuestro Programa Misión Excelencia RB</h2>
         <div class="info-box">
@@ -62,7 +62,7 @@
             </div>
           </div>
 
-          <!-- ESTRELLA AMARILLA (Sin la sigla KPIs) -->
+          <!-- ESTRELLA AMARILLA -->
           <div class="pilar-card pilar-amarillo">
             <img src="img/Colaboradores Estrella.png" alt="Colaboradores Estrella" class="pilar-icon">
             <div class="pilar-info">
@@ -101,6 +101,7 @@
 <script>
 let datos = [];
 
+// Carga del archivo JSON
 fetch('data.json')
   .then(res => res.json())
   .then(json => datos = json)
@@ -122,7 +123,7 @@ function obtenerEstrella(categoria) {
   // 2. ESTRELLA AZUL: ESENCIA RB
   if (cat.includes('integridad') || cat.includes('honestidad') || cat.includes('respeto') || 
       cat.includes('equidad') || cat.includes('excelencia') || cat.includes('creatividad') || 
-      cat.includes('esencia')) {
+      cat.includes('esencia') || cat.includes('servicio')) {
     return { img: 'img/Esencia RB.png', color: '#0284c7' };
   }
 
@@ -132,7 +133,9 @@ function obtenerEstrella(categoria) {
       cat.includes('escuela') || cat.includes('talento') || cat.includes('servicio rb') || 
       cat.includes('reconversión') || cat.includes('reconversion') || cat.includes('sarlaft') || 
       cat.includes('hse') || cat.includes('acoso') || cat.includes('seguridad') || 
-      cat.includes('gobierno') || cat.includes('compras') || cat.includes('aportamos')) {
+      cat.includes('gobierno') || cat.includes('compras') || cat.includes('aportamos') || 
+      cat.includes('ninja') || cat.includes('flow') || cat.includes('estrés') || cat.includes('estres') ||
+      cat.includes('inteligencia') || cat.includes('ia') || cat.includes('empatia') || cat.includes('proactividad')) {
     return { img: 'img/Aprendemos y Aportamos en RB.png', color: '#dc2626' };
   }
 
@@ -162,13 +165,15 @@ function buscar() {
 
   const mensaje = '¡Felicitaciones por tus logros! Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
 
-  const categoriasValidas = (persona.categorias || []).filter(c => c && c.trim() !== '');
+  // Lectura compatible con la propiedad reconocimientos o categorias
+  const listaReconocimientos = persona.reconocimientos || persona.categorias || [];
+  const reconocimientosValidos = listaReconocimientos.filter(c => c && String(c).trim() !== '');
 
-  let categoriasHTML = '';
-  if (categoriasValidas.length > 0) {
-    categoriasValidas.forEach(cat => {
+  let reconocimientosHTML = '';
+  if (reconocimientosValidos.length > 0) {
+    reconocimientosValidos.forEach(cat => {
       const estrella = obtenerEstrella(cat);
-      categoriasHTML += `
+      reconocimientosHTML += `
         <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
           <img src="${estrella.img}" alt="Estrella" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
           <span>${cat}</span>
@@ -176,14 +181,13 @@ function buscar() {
       `;
     });
   } else {
-    categoriasHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin categorías registradas.</p>';
+    reconocimientosHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin reconocimientos registrados.</p>';
   }
 
   resultado.innerHTML = `
     <div class="user-card-header">
       <div class="user-data">
         <p><strong>Nombre:</strong> ${persona.nombre}</p>
-        <p><strong>Cargo:</strong> ${persona.cargo}</p>
       </div>
       <div class="estrellas-box">
         <div class="estrellas-numero">ESTRELLAS ⭐ ${persona.total}</div>
@@ -193,9 +197,9 @@ function buscar() {
     <div class="mensaje-box">${mensaje}</div>
 
     <div class="badges-section">
-      <p class="section-title">Categorías reconocidas a la fecha:</p>
+      <p class="section-title">Reconocimientos asignados a la fecha:</p>
       <div class="categorias-grid">
-        ${categoriasHTML}
+        ${reconocimientosHTML}
       </div>
     </div>
   `;
