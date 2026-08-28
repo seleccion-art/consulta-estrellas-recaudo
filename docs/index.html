@@ -5,6 +5,9 @@
   <title>Misión Excelencia RB – Recaudo Bogotá</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- LIBRERÍA DE CONFETTI/ESTRELLAS -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
@@ -111,6 +114,38 @@ fetch('data.json')
   .then(json => datos = json)
   .catch(err => console.error('Error al cargar data.json:', err));
 
+// FUNCIÓN PARA LANZAR LA ANIMACIÓN DE ESTRELLAS
+function lanzarEstrellas() {
+  const defaults = {
+    spread: 360,
+    ticks: 80,
+    gravity: 0.6,
+    decay: 0.94,
+    startVelocity: 30,
+    shapes: ['star'],
+    colors: ['FFE100', 'FFBD00', 'EAB308', 'A78BFA', '7C3AED']
+  };
+
+  function shoot() {
+    confetti({
+      ...defaults,
+      particleCount: 25,
+      scalar: 1.2,
+      shapes: ['star']
+    });
+    confetti({
+      ...defaults,
+      particleCount: 15,
+      scalar: 0.75,
+      shapes: ['circle']
+    });
+  }
+
+  setTimeout(shoot, 0);
+  setTimeout(shoot, 150);
+  setTimeout(shoot, 300);
+}
+
 function obtenerEstrella(categoria) {
   const cat = categoria.toLowerCase().trim();
 
@@ -176,6 +211,9 @@ function buscar() {
     return;
   }
 
+  // SI ENCUENTRA AL COLABORADOR, DISPARA LA ANIMACIÓN DE ESTRELLAS 🌟
+  lanzarEstrellas();
+
   const mensaje = '¡Felicitaciones por tus logros! Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
 
   const listaReconocimientos = persona.reconocimientos || persona.categorias || [];
@@ -196,9 +234,8 @@ function buscar() {
     reconocimientosHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin reconocimientos registrados.</p>';
   }
 
-  // ETIQUETA A LA DERECHA Y TOTAL DE ESTRELLAS CON EL CONTEO AL LADO
   resultado.innerHTML = `
-    <div class="profile-card">
+    <div class="profile-card fade-in">
       <div class="profile-header">
         <div class="profile-top-bar">
           <span class="profile-badge-tag">Colaborador(a) Reconocido(a)</span>
