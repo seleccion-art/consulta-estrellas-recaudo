@@ -46,7 +46,6 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 12px;
-  /* Resalta el logo si tiene fondo transparente */
   filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2));
 }
 
