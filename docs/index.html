@@ -53,9 +53,9 @@
             </div>
           </div>
 
-          <!-- ESTRELLA MORADA -->
+          <!-- ESTRELLA MORADA (Nombre sin tilde) -->
           <div class="pilar-card pilar-morado">
-            <img src="img/Líderes Inspiradores Que Movilizan.png" alt="Líderes Inspiradores" class="pilar-icon">
+            <img src="img/Lideres Inspiradores Que Movilizan.png" alt="Líderes Inspiradores" class="pilar-icon">
             <div class="pilar-info">
               <h4>Estrella Morada: Líderes Inspiradores</h4>
               <p>Simboliza el liderazgo transformacional. Premia la gestión empática de equipos, el impacto positivo en el clima laboral y la participación activa en comités (Equipares, COPASST, Brigadistas).</p>
@@ -110,14 +110,13 @@ function obtenerEstrella(categoria) {
   const cat = categoria.toLowerCase().trim();
 
   // 1. ESTRELLA MORADA: LÍDERES INSPIRADORES QUE MOVILIZAN
-  // (Se evalúa primero para evitar cruce de palabras)
   if (cat.includes('líder') || cat.includes('lider') || cat.includes('inspir') || 
       cat.includes('moviliz') || cat.includes('brigad') || cat.includes('proyectos especiales') || 
       cat.includes('convivencia') || cat.includes('copasst') || cat.includes('equipares') || 
       cat.includes('clima') || cat.includes('influencia') || cat.includes('antiguedad') || 
       cat.includes('antigüedad') || cat.includes('sostenibilidad') || cat.includes('eva. inversa') || 
       cat.includes('encuesta') || cat.includes('directiv') || cat.includes('jefe') || cat.includes('gerente')) {
-    return { img: 'img/Líderes Inspiradores Que Movilizan.png', color: '#7c3aed' };
+    return { img: 'img/Lideres Inspiradores Que Movilizan.png', color: '#7c3aed' };
   }
 
   // 2. ESTRELLA AZUL: ESENCIA RB
@@ -137,7 +136,7 @@ function obtenerEstrella(categoria) {
     return { img: 'img/Aprendemos y Aportamos en RB.png', color: '#dc2626' };
   }
 
-  // 4. ESTRELLA AMARILLA: COLABORADORES ESTRELLA (CASO POR DEFECTO / DESEMPEÑO)
+  // 4. ESTRELLA AMARILLA: COLABORADORES ESTRELLA (DESEMPEÑO Y KPI)
   return { img: 'img/Colaboradores Estrella.png', color: '#eab308' };
 }
 
