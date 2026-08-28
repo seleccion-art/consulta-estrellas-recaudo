@@ -1,6 +1,6 @@
 :root {
-  --morado-principal: #4f46e5;
-  --morado-oscuro: #3730a3;
+  --morado-principal: #6d28d9;
+  --morado-oscuro: #4c1d95;
   --morado-fondo: #f5f3ff;
   --verde: #2FB36F;
   --fondo: #F4F6F9;
@@ -33,41 +33,44 @@ body {
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
-/* ENCABEZADO CON DEGRADADO MORADO */
+/* ENCABEZADO CON DEGRADADO MORADO CORPORATIVO Y ELEGANTE */
 .header {
-  background: linear-gradient(135deg, #eeeefb 0%, #e0e7ff 50%, #ede9fe 100%);
-  padding: 26px 22px 20px 22px;
+  background: linear-gradient(135deg, #2e1065 0%, #4c1d95 50%, #6d28d9 100%);
+  padding: 30px 22px 26px 22px;
   text-align: center;
-  border-bottom: 4px solid var(--morado-principal);
+  border-bottom: 4px solid #a78bfa;
 }
 
 .logo {
   max-width: 190px;
   width: 100%;
   height: auto;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  /* Resalta el logo si tiene fondo transparente */
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2));
 }
 
 .header h1 {
-  font-size: 24px;
+  font-size: 25px;
   margin: 0;
   font-weight: 800;
-  color: var(--morado-oscuro);
-  letter-spacing: 0.5px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
 .header .subtitle {
   font-size: 14px;
-  margin: 4px 0 2px 0;
-  font-weight: 700;
-  color: #312e81;
+  margin: 6px 0 4px 0;
+  font-weight: 600;
+  color: #ddd6fe;
 }
 
 .header .lema {
-  font-size: 12px;
+  font-size: 12.5px;
   margin: 0;
   font-style: italic;
-  color: #4338ca;
+  color: #c4b5fd;
 }
 
 /* CONTENIDO */
@@ -189,7 +192,7 @@ input {
 
 input:focus {
   border-color: var(--morado-principal);
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+  box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.15);
 }
 
 button {
