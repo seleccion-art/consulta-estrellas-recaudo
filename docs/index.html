@@ -162,7 +162,6 @@ function buscar() {
 
   const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
 
-  // ESTADO VACÍO (CUANDO NO SE ENCUENTRA O TIENE 0 ESTRELLAS)
   if (!persona) {
     resultado.innerHTML = `
       <div class="empty-state-card">
@@ -197,15 +196,19 @@ function buscar() {
     reconocimientosHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin reconocimientos registrados.</p>';
   }
 
+  // ETIQUETA A LA DERECHA Y TOTAL DE ESTRELLAS CON EL CONTEO AL LADO
   resultado.innerHTML = `
     <div class="profile-card">
-      <div class="profile-header-center">
-        <span class="profile-badge-tag">✨ Colaborador(a) Reconocido(a) ✨</span>
+      <div class="profile-header">
+        <div class="profile-top-bar">
+          <span class="profile-badge-tag">Colaborador(a) Reconocido(a)</span>
+        </div>
+        
         <h2 class="profile-name">${persona.nombre}</h2>
         
-        <div class="stars-summary-card">
+        <div class="stars-inline-box">
           <span class="stars-label">TOTAL DE ESTRELLAS</span>
-          <div class="stars-count-box">
+          <div class="stars-badge">
             <span class="star-icon">⭐</span>
             <span class="stars-number">${persona.total}</span>
           </div>
