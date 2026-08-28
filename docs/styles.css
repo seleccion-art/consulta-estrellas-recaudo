@@ -33,7 +33,7 @@ body {
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
-/* HEADER CON DEGRADADO MORADO */
+/* ENCABEZADO CON DEGRADADO MORADO */
 .header {
   background: linear-gradient(135deg, #eeeefb 0%, #e0e7ff 50%, #ede9fe 100%);
   padding: 26px 22px 20px 22px;
@@ -70,7 +70,7 @@ body {
   color: #4338ca;
 }
 
-/* CONTENT */
+/* CONTENIDO */
 .content {
   padding: 28px 24px;
 }
