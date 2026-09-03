@@ -10,25 +10,6 @@
     ]
   },
   {
-    "cedula": "1000033231",
-    "nombre": "Mojica Linares Bayron Steban",
-    "total": 1,
-    "categorias": [
-      "CERTIFICACIÓN DE COMPETENCIAS"
-    ]
-  },
-  {
-    "cedula": "1000126434",
-    "nombre": "Rivillas Rojas Juan David",
-    "total": 4,
-    "categorias": [
-      "CURSOS DE CAPACITACIÓN PHISHING",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "1000130513",
     "nombre": "Rodríguez Neuta Evelyn Juliana",
     "total": 1,
@@ -81,25 +62,6 @@
       "EXCELENCIA EN EL SERVICIO",
       "GOBIERNO CORPORATIVO",
       "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1000179125",
-    "nombre": "González Cedeño Luis Alejandro",
-    "total": 4,
-    "categorias": [
-      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
-      "REINDUCCIÓN HSE"
-    ]
-  },
-  {
-    "cedula": "1000215860",
-    "nombre": "Aristizabal Valencia Lizeth Daniela",
-    "total": 1,
-    "categorias": [
-      "NINJA EXCEL"
     ]
   },
   {
@@ -170,17 +132,6 @@
     ]
   },
   {
-    "cedula": "1000379972",
-    "nombre": "Cárdenas González Nicolas",
-    "total": 4,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "1000460132",
     "nombre": "Rivera Aguirre Mauren Nicol",
     "total": 2,
@@ -217,14 +168,6 @@
     ]
   },
   {
-    "cedula": "1000474673",
-    "nombre": "Rozo Escobar Jeisson Andres",
-    "total": 1,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
-    ]
-  },
-  {
     "cedula": "1000575823",
     "nombre": "Ospina Rincon Evelyn Lorena",
     "total": 1,
@@ -246,31 +189,6 @@
     "total": 1,
     "categorias": [
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
-    ]
-  },
-  {
-    "cedula": "1000587869",
-    "nombre": "Bastidas Ruiz Chelsy Vannesa",
-    "total": 10,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
-      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
-      "EXCELENCIA EN EL SERVICIO",
-      "GOBIERNO CORPORATIVO",
-      "PROACTIVIDAD",
-      "REINDUCCIÓN HSE"
-    ]
-  },
-  {
-    "cedula": "1000590933",
-    "nombre": "Trillos Perdomo Juan Camilo",
-    "total": 1,
-    "categorias": [
-      "CAPACITACION SARLAF"
     ]
   },
   {
@@ -305,23 +223,6 @@
     "total": 1,
     "categorias": [
       "CERTIFICACIÓN DE COMPETENCIAS"
-    ]
-  },
-  {
-    "cedula": "1000732374",
-    "nombre": "Rodríguez Mendez Juan David",
-    "total": 2,
-    "categorias": [
-      "EMPATIA",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1000934944",
-    "nombre": "Penagos López Jenny Paola",
-    "total": 1,
-    "categorias": [
-      "PROACTIVIDAD"
     ]
   },
   {
@@ -511,15 +412,6 @@
     ]
   },
   {
-    "cedula": "1006002351",
-    "nombre": "Sánchez Rodríguez Yeimy Alejandra",
-    "total": 2,
-    "categorias": [
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "1006069376",
     "nombre": "Yate Sanchez Edilson Fabián",
     "total": 3,
@@ -530,38 +422,8 @@
     ]
   },
   {
-    "cedula": "1006580429",
-    "nombre": "Bonivento Bouriyu Iván David",
-    "total": 1,
-    "categorias": [
-      "CAPACITACION SARLAF"
-    ]
-  },
-  {
-    "cedula": "1007045630",
-    "nombre": "Prens Santana Daniel Jose",
-    "total": 4,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "1007103829",
     "nombre": "Rodriguez Avilez Juan Sebastian",
-    "total": 4,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1007105722",
-    "nombre": "Mateus Cortes Heidy Dayana",
     "total": 4,
     "categorias": [
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
@@ -652,14 +514,6 @@
     ]
   },
   {
-    "cedula": "1010040919",
-    "nombre": "Gomez Ospina Juan David",
-    "total": 1,
-    "categorias": [
-      "CERTIFICACIÓN DE COMPETENCIAS"
-    ]
-  },
-  {
     "cedula": "1010059292",
     "nombre": "Campo Herrera Estefania",
     "total": 2,
@@ -678,16 +532,8 @@
     ]
   },
   {
-    "cedula": "1010152189",
-    "nombre": "Salcedo Feria Jhon Fredy",
-    "total": 1,
-    "categorias": [
-      "CURSOS DE CAPACITACIÓN PHISHING"
-    ]
-  },
-  {
     "cedula": "1010162292",
-    "nombre": "Pulido Cortes Luis",
+    "nombre": "Pulido Cortes Luis Manuel Jonnatan",
     "total": 1,
     "categorias": [
       "NUVA"
@@ -740,21 +586,6 @@
     "categorias": [
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
       "EXCELENCIA EN EL SERVICIO"
-    ]
-  },
-  {
-    "cedula": "1010224305",
-    "nombre": "Corredor Manrique Lina Maria",
-    "total": 8,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
-      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
-      "GOBIERNO CORPORATIVO",
-      "REINDUCCIÓN HSE",
-      "NUVA"
     ]
   },
   {
@@ -822,22 +653,6 @@
     ]
   },
   {
-    "cedula": "1012380363",
-    "nombre": "Castillo Murillo Eilyn Milena",
-    "total": 1,
-    "categorias": [
-      "EXCELENCIA EN EL SERVICIO"
-    ]
-  },
-  {
-    "cedula": "1012383197",
-    "nombre": "Paez Poveda Cristhian Ricardo",
-    "total": 1,
-    "categorias": [
-      "NINJA EXCEL"
-    ]
-  },
-  {
     "cedula": "1012385268",
     "nombre": "Sanjuan Gutierrez Jefferson",
     "total": 3,
@@ -856,17 +671,6 @@
     ]
   },
   {
-    "cedula": "1012417977",
-    "nombre": "Bonilla Ospina Yuceyra",
-    "total": 4,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "1012419368",
     "nombre": "Murcia Silva Gabriel Andres",
     "total": 2,
@@ -882,23 +686,6 @@
     "categorias": [
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
       "EMPATIA"
-    ]
-  },
-  {
-    "cedula": "1012460295",
-    "nombre": "Mora Ramirez Sharon Dayane",
-    "total": 1,
-    "categorias": [
-      "CAPACITACION SARLAF"
-    ]
-  },
-  {
-    "cedula": "1013576548",
-    "nombre": "Trujillo Perdomo Keren Lorena",
-    "total": 2,
-    "categorias": [
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
     ]
   },
   {
@@ -1039,14 +826,6 @@
     ]
   },
   {
-    "cedula": "1013672961",
-    "nombre": "Bastidas Lopez Katerine Nicoll",
-    "total": 1,
-    "categorias": [
-      "EXCELENCIA EN EL SERVICIO"
-    ]
-  },
-  {
     "cedula": "1013675181",
     "nombre": "Bohórquez Loaiza Wendy Vanesa",
     "total": 1,
@@ -1112,15 +891,6 @@
     "categorias": [
       "CURSOS DE CAPACITACIÓN PHISHING",
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
-    ]
-  },
-  {
-    "cedula": "1014211279",
-    "nombre": "Ramirez Pinto Adriana Marcela",
-    "total": 2,
-    "categorias": [
-      "EMPATIA",
-      "PROACTIVIDAD"
     ]
   },
   {
@@ -1240,15 +1010,6 @@
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
       "EMPATIA",
       "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1015415830",
-    "nombre": "Fonseca Vargas Cindy Paola",
-    "total": 2,
-    "categorias": [
-      "CAPACITACION SARLAF",
       "PROACTIVIDAD"
     ]
   },
@@ -1397,11 +1158,12 @@
   {
     "cedula": "1018455124",
     "nombre": "Alayon Villamil Diego Alberto",
-    "total": 3,
+    "total": 4,
     "categorias": [
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
       "INTELIGENCIA ARTIFICIAL GENERATIVA UNA ALIADA PARA TU PRODUCTIVIDAD",
-      "MANEJO DEL ESTRÉS"
+      "MANEJO DEL ESTRÉS",
+      "Juego de Equipares"
     ]
   },
   {
@@ -1410,22 +1172,6 @@
     "total": 1,
     "categorias": [
       "GOBIERNO CORPORATIVO"
-    ]
-  },
-  {
-    "cedula": "1018501140",
-    "nombre": "Silva Zamora Heidi Julied",
-    "total": 1,
-    "categorias": [
-      "EXCELENCIA EN EL SERVICIO"
-    ]
-  },
-  {
-    "cedula": "1019024825",
-    "nombre": "Camacho Molina Angela Mayerli",
-    "total": 1,
-    "categorias": [
-      "CAPACITACION SARLAF"
     ]
   },
   {
@@ -1610,14 +1356,6 @@
     ]
   },
   {
-    "cedula": "1022335766",
-    "nombre": "Tenjo . Gisela Andrea",
-    "total": 1,
-    "categorias": [
-      "EMPATIA"
-    ]
-  },
-  {
     "cedula": "1022348959",
     "nombre": "Salazar Angulo Roberto",
     "total": 6,
@@ -1750,14 +1488,6 @@
     ]
   },
   {
-    "cedula": "1022982149",
-    "nombre": "Moreno Rodriguez Brayan Sneeyder",
-    "total": 1,
-    "categorias": [
-      "REINDUCCIÓN HSE"
-    ]
-  },
-  {
     "cedula": "1022983683",
     "nombre": "Cuadrado Camacho Leidy Viviana",
     "total": 1,
@@ -1807,25 +1537,6 @@
     ]
   },
   {
-    "cedula": "1023031466",
-    "nombre": "Gomez Herrera Laura Bibiana",
-    "total": 4,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "EXCELENCIA EN EL SERVICIO",
-      "GOBIERNO CORPORATIVO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1023035216",
-    "nombre": "Rojas Romero Jenny Paola",
-    "total": 1,
-    "categorias": [
-      "NINJA EXCEL"
-    ]
-  },
-  {
     "cedula": "1023037411",
     "nombre": "Guerrero Silva Shirley Dayana",
     "total": 4,
@@ -1848,14 +1559,6 @@
       "EXCELENCIA EN EL SERVICIO",
       "REINDUCCIÓN HSE",
       "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1023861942",
-    "nombre": "Arango Ariza Maria Indira",
-    "total": 1,
-    "categorias": [
-      "NUVA"
     ]
   },
   {
@@ -1891,17 +1594,6 @@
     "categorias": [
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
       "MANEJO DEL ESTRÉS"
-    ]
-  },
-  {
-    "cedula": "1023890987",
-    "nombre": "Merchan Peña Heilyn Valentina",
-    "total": 4,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
     ]
   },
   {
@@ -2169,24 +1861,6 @@
     ]
   },
   {
-    "cedula": "1024561944",
-    "nombre": "Paredes Tiria Angie Stefannia",
-    "total": 3,
-    "categorias": [
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1024598419",
-    "nombre": "Vargas Manchola Diego Fernando",
-    "total": 1,
-    "categorias": [
-      "EMPATIA"
-    ]
-  },
-  {
     "cedula": "1024600040",
     "nombre": "Gomez Campos Andrey Steven",
     "total": 2,
@@ -2317,17 +1991,6 @@
     ]
   },
   {
-    "cedula": "1028661319",
-    "nombre": "Peña Castro Ferney Duvan",
-    "total": 4,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "EXCELENCIA EN EL SERVICIO",
-      "GOBIERNO CORPORATIVO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "1028680073",
     "nombre": "Gomez Martinez Sara Daniela",
     "total": 1,
@@ -2342,14 +2005,6 @@
     "categorias": [
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
       "EMPATIA"
-    ]
-  },
-  {
-    "cedula": "1028820484",
-    "nombre": "Gamez Calderón Ander Yasir",
-    "total": 1,
-    "categorias": [
-      "PROACTIVIDAD"
     ]
   },
   {
@@ -2512,7 +2167,7 @@
   },
   {
     "cedula": "1030638474",
-    "nombre": "Soto William Andres",
+    "nombre": "Soto  William Andres",
     "total": 12,
     "categorias": [
       "CAPACITACION SARLAF",
@@ -2527,16 +2182,6 @@
       "REINDUCCIÓN HSE",
       "NUVA",
       "IA INTERLAKEN"
-    ]
-  },
-  {
-    "cedula": "1030640262",
-    "nombre": "Chaparro Henao Luisa Fernanda",
-    "total": 3,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
-      "NUVA"
     ]
   },
   {
@@ -2556,14 +2201,6 @@
     ]
   },
   {
-    "cedula": "1030691997",
-    "nombre": "Restrepo Clavijo Jonathan Stiven",
-    "total": 1,
-    "categorias": [
-      "NUVA"
-    ]
-  },
-  {
     "cedula": "1030692108",
     "nombre": "Beltrán Romero Mary Angelica",
     "total": 4,
@@ -2572,15 +2209,6 @@
       "EMPATIA",
       "EXCELENCIA EN EL SERVICIO",
       "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1030694403",
-    "nombre": "Bautista Roa Branlly Nicolas",
-    "total": 2,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "EXCELENCIA EN EL SERVICIO"
     ]
   },
   {
@@ -2690,7 +2318,7 @@
   },
   {
     "cedula": "1032357120",
-    "nombre": "Algarra Diego Fernando",
+    "nombre": "Algarra  Diego Fernando",
     "total": 1,
     "categorias": [
       "NUVA"
@@ -2871,14 +2499,6 @@
     ]
   },
   {
-    "cedula": "1033682434",
-    "nombre": "Guevara Rios Marcela",
-    "total": 1,
-    "categorias": [
-      "NINJA EXCEL"
-    ]
-  },
-  {
     "cedula": "1033690519",
     "nombre": "Correa Rios Ricardo Estiben",
     "total": 1,
@@ -2968,15 +2588,6 @@
     ]
   },
   {
-    "cedula": "1033725690",
-    "nombre": "Melo Guzman Leidy Yisenia",
-    "total": 2,
-    "categorias": [
-      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
-      "MANEJO DEL ESTRÉS"
-    ]
-  },
-  {
     "cedula": "1033731501",
     "nombre": "Osorio Osorio John Anderson",
     "total": 3,
@@ -3037,17 +2648,6 @@
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
       "EMPATIA",
       "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1033741830",
-    "nombre": "Zambrano Saldaña Leidy Diana",
-    "total": 4,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "EXCELENCIA EN EL SERVICIO",
-      "GOBIERNO CORPORATIVO",
       "PROACTIVIDAD"
     ]
   },
@@ -3146,17 +2746,6 @@
     ]
   },
   {
-    "cedula": "1033801033",
-    "nombre": "Chinchilla Prada Leidy Johana",
-    "total": 4,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "1033801213",
     "nombre": "Bastidas Henao Cindy Lorena",
     "total": 1,
@@ -3170,17 +2759,6 @@
     "total": 1,
     "categorias": [
       "CURSOS DE CAPACITACIÓN PHISHING"
-    ]
-  },
-  {
-    "cedula": "1034277886",
-    "nombre": "Varelas Segura Alison Sharik",
-    "total": 4,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
     ]
   },
   {
@@ -3255,17 +2833,6 @@
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
       "INTELIGENCIA ARTIFICIAL GENERATIVA UNA ALIADA PARA TU PRODUCTIVIDAD",
       "MANEJO DEL ESTRÉS"
-    ]
-  },
-  {
-    "cedula": "1053333929",
-    "nombre": "López Bravo Alan Jefri",
-    "total": 4,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
     ]
   },
   {
@@ -3411,16 +2978,6 @@
     ]
   },
   {
-    "cedula": "1065245112",
-    "nombre": "Martínez Cortes Angie Katherine",
-    "total": 3,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "EXCELENCIA EN EL SERVICIO"
-    ]
-  },
-  {
     "cedula": "1065580542",
     "nombre": "Jiménez Cardenas Ilan Jordano",
     "total": 6,
@@ -3526,15 +3083,6 @@
     ]
   },
   {
-    "cedula": "1072198541",
-    "nombre": "Bello Simbaqueba Brandon Claver",
-    "total": 2,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EXCELENCIA EN EL SERVICIO"
-    ]
-  },
-  {
     "cedula": "1072895362",
     "nombre": "Rodriguez Villalba Sebastian",
     "total": 2,
@@ -3553,16 +3101,6 @@
     ]
   },
   {
-    "cedula": "1073684866",
-    "nombre": "Diaz . Yeraldin Yecenia",
-    "total": 3,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "1073714239",
     "nombre": "Sandoval Camacho Diana Paola",
     "total": 4,
@@ -3571,14 +3109,6 @@
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
       "EXCELENCIA EN EL SERVICIO",
       "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1073823086",
-    "nombre": "Martínez Martinez Javier Eduardo",
-    "total": 1,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
     ]
   },
   {
@@ -3615,14 +3145,6 @@
     "total": 1,
     "categorias": [
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
-    ]
-  },
-  {
-    "cedula": "1077148914",
-    "nombre": "López Rojas Manuel Andrés",
-    "total": 1,
-    "categorias": [
-      "NUVA"
     ]
   },
   {
@@ -3850,14 +3372,6 @@
     ]
   },
   {
-    "cedula": "1118071039",
-    "nombre": "Ortiz Leon Jhan Carlos",
-    "total": 1,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
-    ]
-  },
-  {
     "cedula": "1118823349",
     "nombre": "Acosta Arroyo Dogdnell Mario",
     "total": 5,
@@ -3866,16 +3380,6 @@
       "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
       "EQUIDAD DIVERSIDAD E INCLUSIÓN",
       "REINDUCCIÓN HSE",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "1120841160",
-    "nombre": "Nova Largo Maryi Alexandra",
-    "total": 3,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA",
       "PROACTIVIDAD"
     ]
   },
@@ -3967,23 +3471,6 @@
     ]
   },
   {
-    "cedula": "1137179111",
-    "nombre": "Manjarres Month Yina Maria",
-    "total": 2,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA"
-    ]
-  },
-  {
-    "cedula": "1137189107",
-    "nombre": "Hernández Posada Franklin De Jesús",
-    "total": 1,
-    "categorias": [
-      "CURSOS DE CAPACITACIÓN PHISHING"
-    ]
-  },
-  {
     "cedula": "1143402812",
     "nombre": "Hurtado Angulo Jeison Manuel",
     "total": 6,
@@ -4019,24 +3506,6 @@
     ]
   },
   {
-    "cedula": "1193583743",
-    "nombre": "Herrera Arroyo Yuliana",
-    "total": 2,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "GOBIERNO CORPORATIVO"
-    ]
-  },
-  {
-    "cedula": "1216976629",
-    "nombre": "Morales Vega José Miguel",
-    "total": 2,
-    "categorias": [
-      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
-      "MANEJO DEL ESTRÉS"
-    ]
-  },
-  {
     "cedula": "1234089463",
     "nombre": "Coronado Cardenas Luisa Fernanda",
     "total": 9,
@@ -4050,15 +3519,6 @@
       "REINDUCCIÓN HSE",
       "NUVA",
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
-    ]
-  },
-  {
-    "cedula": "1235253597",
-    "nombre": "Silva Torres María Elicenia",
-    "total": 2,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "GOBIERNO CORPORATIVO"
     ]
   },
   {
@@ -4281,15 +3741,6 @@
     ]
   },
   {
-    "cedula": "35511486",
-    "nombre": "Pinilla Ortega Maria Fernanda",
-    "total": 2,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EMPATIA"
-    ]
-  },
-  {
     "cedula": "35513985",
     "nombre": "Peñuela Beltran Carmen Elisa",
     "total": 1,
@@ -4322,16 +3773,6 @@
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
       "EMPATIA",
       "Donación"
-    ]
-  },
-  {
-    "cedula": "37550909",
-    "nombre": "Ronderos Estevez Silvia",
-    "total": 3,
-    "categorias": [
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD",
-      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
     ]
   },
   {
@@ -4430,7 +3871,7 @@
   },
   {
     "cedula": "39729991",
-    "nombre": "Acosta Ana Bertilda",
+    "nombre": "Acosta  Ana Bertilda",
     "total": 4,
     "categorias": [
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
@@ -4566,14 +4007,6 @@
     "categorias": [
       "EMPATIA",
       "EXCELENCIA EN EL SERVICIO"
-    ]
-  },
-  {
-    "cedula": "51693027",
-    "nombre": "Avila Gonzalez Marleny",
-    "total": 1,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
     ]
   },
   {
@@ -4813,7 +4246,7 @@
   },
   {
     "cedula": "52228593",
-    "nombre": "Malagon Sandra Patricia",
+    "nombre": "Malagon  Sandra Patricia",
     "total": 4,
     "categorias": [
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
@@ -4889,14 +4322,6 @@
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
       "INTELIGENCIA ARTIFICIAL GENERATIVA UNA ALIADA PARA TU PRODUCTIVIDAD",
       "MANEJO DEL ESTRÉS"
-    ]
-  },
-  {
-    "cedula": "52300814",
-    "nombre": "Franco Mendoza Marisol",
-    "total": 1,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
     ]
   },
   {
@@ -5210,7 +4635,7 @@
   },
   {
     "cedula": "52555522",
-    "nombre": "Medina Maria Eugenia",
+    "nombre": "Medina  Maria Eugenia",
     "total": 1,
     "categorias": [
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
@@ -5290,28 +4715,11 @@
     ]
   },
   {
-    "cedula": "52729957",
-    "nombre": "Valenzuela García Yerly Maritza",
-    "total": 2,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EXCELENCIA EN EL SERVICIO"
-    ]
-  },
-  {
     "cedula": "52732547",
     "nombre": "Sanabria Rodriguez Martha Yolanda",
     "total": 1,
     "categorias": [
       "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "52734705",
-    "nombre": "Velasquez Hernández Diana Carolina",
-    "total": 1,
-    "categorias": [
-      "EXCELENCIA EN EL SERVICIO"
     ]
   },
   {
@@ -5416,17 +4824,6 @@
     "total": 1,
     "categorias": [
       "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
-    ]
-  },
-  {
-    "cedula": "52849706",
-    "nombre": "Muñeton Gallo Maria Edelmira",
-    "total": 4,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "EXCELENCIA EN EL SERVICIO",
-      "GOBIERNO CORPORATIVO",
-      "PROACTIVIDAD"
     ]
   },
   {
@@ -5549,7 +4946,7 @@
   },
   {
     "cedula": "52965090",
-    "nombre": "Yela Rocio Damariz",
+    "nombre": "Yela  Rocio Damariz",
     "total": 2,
     "categorias": [
       "CAPACITACION SARLAF",
@@ -5601,16 +4998,6 @@
     ]
   },
   {
-    "cedula": "53010421",
-    "nombre": "Florez Ayala Claudia Marcela",
-    "total": 3,
-    "categorias": [
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "53030475",
     "nombre": "Sandoval Forero Sandra Yohana",
     "total": 2,
@@ -5628,15 +5015,6 @@
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
       "EXCELENCIA EN EL SERVICIO",
       "Donación"
-    ]
-  },
-  {
-    "cedula": "53043935",
-    "nombre": "Sarmiento Vanegas Sandra Milena",
-    "total": 2,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "PROACTIVIDAD"
     ]
   },
   {
@@ -5699,19 +5077,8 @@
     ]
   },
   {
-    "cedula": "53080821",
-    "nombre": "Espitia Cortes Jennifer Yolima",
-    "total": 4,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
-      "GOBIERNO CORPORATIVO",
-      "NUVA"
-    ]
-  },
-  {
     "cedula": "53082545",
-    "nombre": "Guiza Monica",
+    "nombre": "Guiza  Monica",
     "total": 4,
     "categorias": [
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
@@ -5753,7 +5120,7 @@
   },
   {
     "cedula": "53117824",
-    "nombre": "Chaux Liliana Aminta",
+    "nombre": "Chaux  Liliana Aminta",
     "total": 1,
     "categorias": [
       "NUVA"
@@ -5926,17 +5293,6 @@
     ]
   },
   {
-    "cedula": "7384921",
-    "nombre": "Ayala Hernández Jesus Manuel",
-    "total": 4,
-    "categorias": [
-      "CAPACITACION SARLAF",
-      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
-      "EXCELENCIA EN EL SERVICIO",
-      "PROACTIVIDAD"
-    ]
-  },
-  {
     "cedula": "74372432",
     "nombre": "Agudelo Vega Helbert Enrique",
     "total": 1,
@@ -6000,7 +5356,7 @@
   },
   {
     "cedula": "79405047",
-    "nombre": "Fonseca Fernando",
+    "nombre": "Fonseca  Fernando",
     "total": 1,
     "categorias": [
       "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
@@ -6086,15 +5442,6 @@
     ]
   },
   {
-    "cedula": "79915130",
-    "nombre": "Jiménez Bone William Alberto",
-    "total": 2,
-    "categorias": [
-      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
-      "CURSO DE SEGURIDAD DE LA INFORMACIÓN"
-    ]
-  },
-  {
     "cedula": "79938060",
     "nombre": "Contreras Pedraza Oscar Andres",
     "total": 4,
@@ -6106,36 +5453,11 @@
     ]
   },
   {
-    "cedula": "79940474",
-    "nombre": "Quintero Trujillo Fernando Mauricio",
-    "total": 1,
-    "categorias": [
-      "NINJA EXCEL"
-    ]
-  },
-  {
     "cedula": "79951930",
     "nombre": "Gomez Chong Yeison Ivan",
     "total": 1,
     "categorias": [
       "NUVA"
-    ]
-  },
-  {
-    "cedula": "79954070",
-    "nombre": "Villalba Alfonso Edicson Leonel",
-    "total": 2,
-    "categorias": [
-      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
-      "EQUIDAD DIVERSIDAD E INCLUSIÓN"
-    ]
-  },
-  {
-    "cedula": "79957640",
-    "nombre": "Umbarila Castillo David Alexander",
-    "total": 1,
-    "categorias": [
-      "CURSO DE SEGURIDAD DE LA INFORMACIÓN"
     ]
   },
   {
@@ -6156,14 +5478,6 @@
       "EMPATIA",
       "EXCELENCIA EN EL SERVICIO",
       "PROACTIVIDAD"
-    ]
-  },
-  {
-    "cedula": "80000990",
-    "nombre": "Martinez Chitiva Pedro Leonardo",
-    "total": 1,
-    "categorias": [
-      "NUVA"
     ]
   },
   {
@@ -6491,7 +5805,7 @@
   },
   {
     "cedula": "1030626482",
-    "nombre": "CHRISTIAN JAVIER BARRERA MENDOZA",
+    "nombre": "Barrera Mendoza Christian Javier",
     "total": 1,
     "categorias": [
       "Semillero"
@@ -6499,7 +5813,7 @@
   },
   {
     "cedula": "1000252059",
-    "nombre": "JOHAN NICOLÁS LINARES ACOSTA",
+    "nombre": "Linares Acosta Johan Nicolas",
     "total": 1,
     "categorias": [
       "Semillero"
@@ -6618,16 +5932,8 @@
     ]
   },
   {
-    "cedula": "1022408992",
-    "nombre": "Miguel Angel Rodriguez Viracacha",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
     "cedula": "1024558557",
-    "nombre": "Flavio Julián Chamorro",
+    "nombre": "Chamorro Duran Flavio Julian",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6635,7 +5941,7 @@
   },
   {
     "cedula": "35250056",
-    "nombre": "Norma Ines Melo",
+    "nombre": "Melo Herrera Norma Ines",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6643,7 +5949,7 @@
   },
   {
     "cedula": "1033786903",
-    "nombre": "Denny Alejandra Salinas",
+    "nombre": "Salinas Sanabria Denny Alejandra",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6659,7 +5965,7 @@
   },
   {
     "cedula": "30205621",
-    "nombre": "Yasmin Hurtado",
+    "nombre": "Hurtado Mateus Yasmin",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6667,7 +5973,7 @@
   },
   {
     "cedula": "1016096809",
-    "nombre": "nick Villanueva",
+    "nombre": "Villanueva Sosa Nick Brayan",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6675,7 +5981,7 @@
   },
   {
     "cedula": "1033800391",
-    "nombre": "Santiago Garcia Mojica",
+    "nombre": "Garcia Mojica Santiago",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6683,7 +5989,7 @@
   },
   {
     "cedula": "39763595",
-    "nombre": "Luz Maver Doncel Puentes",
+    "nombre": "Doncel Puentes Luz Maver",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6691,7 +5997,7 @@
   },
   {
     "cedula": "80270300",
-    "nombre": "Jhon Vallejo Herrera",
+    "nombre": "Vallejo Herrera John",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6699,7 +6005,7 @@
   },
   {
     "cedula": "1013096635",
-    "nombre": "Giovanny Alejandro Zarta Giraldo",
+    "nombre": "Zarta Giraldo Giovanny Alejandro",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6707,7 +6013,7 @@
   },
   {
     "cedula": "1049604571",
-    "nombre": "Marcela Medina",
+    "nombre": "Medina Gonzalez Marcela",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6715,7 +6021,7 @@
   },
   {
     "cedula": "53051006",
-    "nombre": "Ana Milena Niño",
+    "nombre": "Niño Baquero Ana Milena",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6723,7 +6029,7 @@
   },
   {
     "cedula": "53893395",
-    "nombre": "Andrea Girón",
+    "nombre": "Giron Mora Andrea Del Pilar",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6731,7 +6037,7 @@
   },
   {
     "cedula": "1019048214",
-    "nombre": "Johana Cortés",
+    "nombre": "Cortes Rodriguez Solaidy Johana",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6739,7 +6045,7 @@
   },
   {
     "cedula": "52121141",
-    "nombre": "Nancy Delgado",
+    "nombre": "Delgado Blanco Maria Nancy",
     "total": 2,
     "categorias": [
       "Donación",
@@ -6748,7 +6054,7 @@
   },
   {
     "cedula": "20774922",
-    "nombre": "Jackeline Ordoñez",
+    "nombre": "Ordoñez  Yakeline",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6756,7 +6062,7 @@
   },
   {
     "cedula": "1024519562",
-    "nombre": "Yeraldine Gonzalez",
+    "nombre": "Gonzalez Borda Yeraldin",
     "total": 2,
     "categorias": [
       "Donación",
@@ -6765,7 +6071,7 @@
   },
   {
     "cedula": "1063281986",
-    "nombre": "Juranys Galvan",
+    "nombre": "Galvan Higuita Juranys",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6773,7 +6079,7 @@
   },
   {
     "cedula": "1007339915",
-    "nombre": "Valentina Laguna",
+    "nombre": "Laguna Leiva Valentina",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6781,7 +6087,7 @@
   },
   {
     "cedula": "1019055460",
-    "nombre": "Jhonatha Arrevalo",
+    "nombre": "Arevalo Ramirez Jonathan Steve",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6789,7 +6095,7 @@
   },
   {
     "cedula": "20572138",
-    "nombre": "Alba Nohemi Moreno",
+    "nombre": "Moreno Moreno Alba Nohemy",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6797,7 +6103,7 @@
   },
   {
     "cedula": "11258278",
-    "nombre": "Jose Urrea",
+    "nombre": "Urrea Mayorga Jose Israel",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6805,7 +6111,7 @@
   },
   {
     "cedula": "1020719279",
-    "nombre": "Nancy Barrero",
+    "nombre": "Barrera Velasquez Nancy",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6813,7 +6119,7 @@
   },
   {
     "cedula": "53130518",
-    "nombre": "Francy Ortegon",
+    "nombre": "Ortegon Yepes Francy Yaneth",
     "total": 2,
     "categorias": [
       "Donación",
@@ -6822,7 +6128,7 @@
   },
   {
     "cedula": "52025372",
-    "nombre": "Nelly Gonzalez",
+    "nombre": "Gonzalez Arias Nelly Arabella",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6830,7 +6136,7 @@
   },
   {
     "cedula": "52757984",
-    "nombre": "Adriana Rodriguez Llano",
+    "nombre": "Rodriguez Grande Adriana Maritza",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6838,7 +6144,7 @@
   },
   {
     "cedula": "1007725982",
-    "nombre": "Laura Fierro",
+    "nombre": "Fierro Cruz Laura Katherine",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6846,15 +6152,7 @@
   },
   {
     "cedula": "1024538296",
-    "nombre": "Yuli Orozco",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "52091050",
-    "nombre": "Lady Beltran",
+    "nombre": "Orozco Manrique Yuli Alexandra",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6862,7 +6160,7 @@
   },
   {
     "cedula": "53115529",
-    "nombre": "Nelsy Rincon",
+    "nombre": "Rincon Peña Nensy",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6870,7 +6168,7 @@
   },
   {
     "cedula": "52118471",
-    "nombre": "Milena Gutierrez",
+    "nombre": "Gutierrez Pinto Milena",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6878,7 +6176,7 @@
   },
   {
     "cedula": "33700281",
-    "nombre": "Nidia Carrillo",
+    "nombre": "Carrillo Rojas Nidia Yaneth",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6886,7 +6184,7 @@
   },
   {
     "cedula": "52545753",
-    "nombre": "Alexandra Reyes",
+    "nombre": "Reyes Carreño Alexandra",
     "total": 2,
     "categorias": [
       "Donación",
@@ -6895,7 +6193,7 @@
   },
   {
     "cedula": "52845568",
-    "nombre": "Lorena Mayorga",
+    "nombre": "Mayorga Guerrero Lorena Andrea",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6983,7 +6281,7 @@
   },
   {
     "cedula": "52883004",
-    "nombre": "Jazmin leon",
+    "nombre": "Leon Cáceres Jazmin",
     "total": 1,
     "categorias": [
       "Donación"
@@ -6999,7 +6297,878 @@
   },
   {
     "cedula": "52324850",
-    "nombre": "Yuri Marcela Gomez",
+    "nombre": "Gomez Vargas Yuli Marcela",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "52874120",
+    "nombre": "Reuterh Garzon Ingrid Del Mar",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "1095911559",
+    "nombre": "Vargas Moscoso Leidy Yesenie",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "1073690441",
+    "nombre": "Garcia Casallas Yessica Tatiana",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "52669143",
+    "nombre": "Caraballo Varela Clara Inés",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "37723143",
+    "nombre": "Rincon Dominguez Flor Angela",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "52634355",
+    "nombre": "Sierra Rodriguez Marta Obdulia",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "39792486",
+    "nombre": "Hernandez Alvarez Myriam Yasmin",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "1066729378",
+    "nombre": "Lopez Gil Jennifer Maria",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "35411784",
+    "nombre": "Corredor Espinel Margoth",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "51957221",
+    "nombre": "Correa Casallas Edith Yulian",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "80412022",
+    "nombre": "Ricaurte Villamarin Jorge Alfredo",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "20644996",
+    "nombre": "Rodriguez Peña Rosalba",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "52387229",
+    "nombre": "Velandia Sanchez Ana Yensy",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "52868749",
+    "nombre": "Guerrero Coronado Monica Patricia",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "51882517",
+    "nombre": "Barbosa Garcia Nohora Elsa",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "1022375970",
+    "nombre": "Cortez Toledo Jessica Andrea",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "1020733893",
+    "nombre": "Rodríguez Torres Yeni Milena",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "1022421215",
+    "nombre": "Gomez Benitez Paula Andrea",
+    "total": 1,
+    "categorias": [
+      "Juego de Equipares"
+    ]
+  },
+  {
+    "cedula": "1013646568",
+    "nombre": "Piñeros Barrios Jhon Sebastián",
+    "total": 1,
+    "categorias": [
+      "Juego de Equipares"
+    ]
+  },
+  {
+    "cedula": "1023950942",
+    "nombre": "Rodriguez Zarta Leidy Estefania",
+    "total": 1,
+    "categorias": [
+      "Juego de Equipares"
+    ]
+  },
+  {
+    "cedula": "52336478",
+    "nombre": "Beltran Mora Alexandra",
+    "total": 1,
+    "categorias": [
+      "Juego de Equipares"
+    ]
+  },
+  {
+    "cedula": "1000033231",
+    "nombre": "Mojica Linares Bayron Steban",
+    "total": 1,
+    "categorias": [
+      "CERTIFICACIÓN DE COMPETENCIAS"
+    ]
+  },
+  {
+    "cedula": "1000126434",
+    "nombre": "Rivillas Rojas Juan David",
+    "total": 4,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000179125",
+    "nombre": "González Cedeño Luis Alejandro",
+    "total": 4,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1000215860",
+    "nombre": "Aristizabal Valencia Lizeth Daniela",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1000379972",
+    "nombre": "Cárdenas González Nicolas",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000474673",
+    "nombre": "Rozo Escobar Jeisson Andres",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1000587869",
+    "nombre": "Bastidas Ruiz Chelsy Vannesa",
+    "total": 10,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD",
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1000590933",
+    "nombre": "Trillos Perdomo Juan Camilo",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1000732374",
+    "nombre": "Rodríguez Mendez Juan David",
+    "total": 2,
+    "categorias": [
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000934944",
+    "nombre": "Penagos López Jenny Paola",
+    "total": 1,
+    "categorias": [
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1006002351",
+    "nombre": "Sánchez Rodríguez Yeimy Alejandra",
+    "total": 2,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1006580429",
+    "nombre": "Bonivento Bouriyu Iván David",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1007045630",
+    "nombre": "Prens Santana Daniel Jose",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1007105722",
+    "nombre": "Mateus Cortes Heidy Dayana",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1010040919",
+    "nombre": "Gomez Ospina Juan David",
+    "total": 1,
+    "categorias": [
+      "CERTIFICACIÓN DE COMPETENCIAS"
+    ]
+  },
+  {
+    "cedula": "1010152189",
+    "nombre": "Salcedo Feria Jhon Fredy",
+    "total": 1,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING"
+    ]
+  },
+  {
+    "cedula": "1010224305",
+    "nombre": "Corredor Manrique Lina Maria",
+    "total": 8,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "GOBIERNO CORPORATIVO",
+      "REINDUCCIÓN HSE",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1012380363",
+    "nombre": "Castillo Murillo Eilyn Milena",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1012383197",
+    "nombre": "Paez Poveda Cristhian Ricardo",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1012417977",
+    "nombre": "Bonilla Ospina Yuceyra",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1012460295",
+    "nombre": "Mora Ramirez Sharon Dayane",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1013576548",
+    "nombre": "Trujillo Perdomo Keren Lorena",
+    "total": 2,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1013672961",
+    "nombre": "Bastidas Lopez Katerine Nicoll",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1014211279",
+    "nombre": "Ramirez Pinto Adriana Marcela",
+    "total": 2,
+    "categorias": [
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1015415830",
+    "nombre": "Fonseca Vargas Cindy Paola",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1018501140",
+    "nombre": "Silva Zamora Heidi Julied",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1019024825",
+    "nombre": "Camacho Molina Angela Mayerli",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1022335766",
+    "nombre": "Tenjo . Gisela Andrea",
+    "total": 1,
+    "categorias": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1022982149",
+    "nombre": "Moreno Rodriguez Brayan Sneeyder",
+    "total": 1,
+    "categorias": [
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1023031466",
+    "nombre": "Gomez Herrera Laura Bibiana",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1023035216",
+    "nombre": "Rojas Romero Jenny Paola",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1023861942",
+    "nombre": "Arango Ariza Maria Indira",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1023890987",
+    "nombre": "Merchan Peña Heilyn Valentina",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
+    ]
+  },
+  {
+    "cedula": "1024561944",
+    "nombre": "Paredes Tiria Angie Stefannia",
+    "total": 3,
+    "categorias": [
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1024598419",
+    "nombre": "Vargas Manchola Diego Fernando",
+    "total": 1,
+    "categorias": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1028661319",
+    "nombre": "Peña Castro Ferney Duvan",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1028820484",
+    "nombre": "Gamez Calderón Ander Yasir",
+    "total": 1,
+    "categorias": [
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1030640262",
+    "nombre": "Chaparro Henao Luisa Fernanda",
+    "total": 3,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1030691997",
+    "nombre": "Restrepo Clavijo Jonathan Stiven",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1030694403",
+    "nombre": "Bautista Roa Branlly Nicolas",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1033682434",
+    "nombre": "Guevara Rios Marcela",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1033725690",
+    "nombre": "Melo Guzman Leidy Yisenia",
+    "total": 2,
+    "categorias": [
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
+      "MANEJO DEL ESTRÉS"
+    ]
+  },
+  {
+    "cedula": "1033741830",
+    "nombre": "Zambrano Saldaña Leidy Diana",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1033801033",
+    "nombre": "Chinchilla Prada Leidy Johana",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1034277886",
+    "nombre": "Varelas Segura Alison Sharik",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1053333929",
+    "nombre": "López Bravo Alan Jefri",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1065245112",
+    "nombre": "Martínez Cortes Angie Katherine",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1072198541",
+    "nombre": "Bello Simbaqueba Brandon Claver",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1073684866",
+    "nombre": "Diaz . Yeraldin Yecenia",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1073823086",
+    "nombre": "Martínez Martinez Javier Eduardo",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1077148914",
+    "nombre": "López Rojas Manuel Andrés",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1118071039",
+    "nombre": "Ortiz Leon Jhan Carlos",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1120841160",
+    "nombre": "Nova Largo Maryi Alexandra",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1137179111",
+    "nombre": "Manjarres Month Yina Maria",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1137189107",
+    "nombre": "Hernández Posada Franklin De Jesús",
+    "total": 1,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING"
+    ]
+  },
+  {
+    "cedula": "1193583743",
+    "nombre": "Herrera Arroyo Yuliana",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "GOBIERNO CORPORATIVO"
+    ]
+  },
+  {
+    "cedula": "1216976629",
+    "nombre": "Morales Vega José Miguel",
+    "total": 2,
+    "categorias": [
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
+      "MANEJO DEL ESTRÉS"
+    ]
+  },
+  {
+    "cedula": "1235253597",
+    "nombre": "Silva Torres María Elicenia",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "GOBIERNO CORPORATIVO"
+    ]
+  },
+  {
+    "cedula": "35511486",
+    "nombre": "Pinilla Ortega Maria Fernanda",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "37550909",
+    "nombre": "Ronderos Estevez Silvia",
+    "total": 3,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD",
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
+    ]
+  },
+  {
+    "cedula": "51693027",
+    "nombre": "Avila Gonzalez Marleny",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "52300814",
+    "nombre": "Franco Mendoza Marisol",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "52729957",
+    "nombre": "Valenzuela García Yerly Maritza",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "52734705",
+    "nombre": "Velasquez Hernández Diana Carolina",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "52849706",
+    "nombre": "Muñeton Gallo Maria Edelmira",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53010421",
+    "nombre": "Florez Ayala Claudia Marcela",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53043935",
+    "nombre": "Sarmiento Vanegas Sandra Milena",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53080821",
+    "nombre": "Espitia Cortes Jennifer Yolima",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "GOBIERNO CORPORATIVO",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "7384921",
+    "nombre": "Ayala Hernández Jesus Manuel",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "79915130",
+    "nombre": "Jiménez Bone William Alberto",
+    "total": 2,
+    "categorias": [
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN"
+    ]
+  },
+  {
+    "cedula": "79940474",
+    "nombre": "Quintero Trujillo Fernando Mauricio",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "79954070",
+    "nombre": "Villalba Alfonso Edicson Leonel",
+    "total": 2,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN"
+    ]
+  },
+  {
+    "cedula": "79957640",
+    "nombre": "Umbarila Castillo David Alexander",
+    "total": 1,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN"
+    ]
+  },
+  {
+    "cedula": "80000990",
+    "nombre": "Martinez Chitiva Pedro Leonardo",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1022408992",
+    "nombre": "Miguel Angel Rodriguez Viracacha",
+    "total": 1,
+    "categorias": [
+      "Donación"
+    ]
+  },
+  {
+    "cedula": "52091050",
+    "nombre": "Lady Beltran",
     "total": 1,
     "categorias": [
       "Donación"
@@ -7014,171 +7183,1425 @@
     ]
   },
   {
-    "cedula": "52874120",
-    "nombre": "Ingrit Reuterh",
+    "cedula": "1000033231",
+    "nombre": "Mojica Linares Bayron Steban",
+    "total": 1,
+    "categorias": [
+      "CERTIFICACIÓN DE COMPETENCIAS"
+    ]
+  },
+  {
+    "cedula": "1000126434",
+    "nombre": "Rivillas Rojas Juan David",
+    "total": 4,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000179125",
+    "nombre": "González Cedeño Luis Alejandro",
+    "total": 4,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1000215860",
+    "nombre": "Aristizabal Valencia Lizeth Daniela",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1000379972",
+    "nombre": "Cárdenas González Nicolas",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000474673",
+    "nombre": "Rozo Escobar Jeisson Andres",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1000587869",
+    "nombre": "Bastidas Ruiz Chelsy Vannesa",
+    "total": 10,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD",
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1000590933",
+    "nombre": "Trillos Perdomo Juan Camilo",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1000732374",
+    "nombre": "Rodríguez Mendez Juan David",
+    "total": 2,
+    "categorias": [
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000934944",
+    "nombre": "Penagos López Jenny Paola",
+    "total": 1,
+    "categorias": [
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1006002351",
+    "nombre": "Sánchez Rodríguez Yeimy Alejandra",
+    "total": 2,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1006580429",
+    "nombre": "Bonivento Bouriyu Iván David",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1007045630",
+    "nombre": "Prens Santana Daniel Jose",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1007105722",
+    "nombre": "Mateus Cortes Heidy Dayana",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1010040919",
+    "nombre": "Gomez Ospina Juan David",
+    "total": 1,
+    "categorias": [
+      "CERTIFICACIÓN DE COMPETENCIAS"
+    ]
+  },
+  {
+    "cedula": "1010152189",
+    "nombre": "Salcedo Feria Jhon Fredy",
+    "total": 1,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING"
+    ]
+  },
+  {
+    "cedula": "1010224305",
+    "nombre": "Corredor Manrique Lina Maria",
+    "total": 8,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "GOBIERNO CORPORATIVO",
+      "REINDUCCIÓN HSE",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1012380363",
+    "nombre": "Castillo Murillo Eilyn Milena",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1012383197",
+    "nombre": "Paez Poveda Cristhian Ricardo",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1012417977",
+    "nombre": "Bonilla Ospina Yuceyra",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1012460295",
+    "nombre": "Mora Ramirez Sharon Dayane",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1013576548",
+    "nombre": "Trujillo Perdomo Keren Lorena",
+    "total": 2,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1013672961",
+    "nombre": "Bastidas Lopez Katerine Nicoll",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1014211279",
+    "nombre": "Ramirez Pinto Adriana Marcela",
+    "total": 2,
+    "categorias": [
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1015415830",
+    "nombre": "Fonseca Vargas Cindy Paola",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1018501140",
+    "nombre": "Silva Zamora Heidi Julied",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1019024825",
+    "nombre": "Camacho Molina Angela Mayerli",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1022335766",
+    "nombre": "Tenjo . Gisela Andrea",
+    "total": 1,
+    "categorias": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1022982149",
+    "nombre": "Moreno Rodriguez Brayan Sneeyder",
+    "total": 1,
+    "categorias": [
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1023031466",
+    "nombre": "Gomez Herrera Laura Bibiana",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1023035216",
+    "nombre": "Rojas Romero Jenny Paola",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1023861942",
+    "nombre": "Arango Ariza Maria Indira",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1023890987",
+    "nombre": "Merchan Peña Heilyn Valentina",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
+    ]
+  },
+  {
+    "cedula": "1024561944",
+    "nombre": "Paredes Tiria Angie Stefannia",
+    "total": 3,
+    "categorias": [
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1024598419",
+    "nombre": "Vargas Manchola Diego Fernando",
+    "total": 1,
+    "categorias": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1028661319",
+    "nombre": "Peña Castro Ferney Duvan",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1028820484",
+    "nombre": "Gamez Calderón Ander Yasir",
+    "total": 1,
+    "categorias": [
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1030640262",
+    "nombre": "Chaparro Henao Luisa Fernanda",
+    "total": 3,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1030691997",
+    "nombre": "Restrepo Clavijo Jonathan Stiven",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1030694403",
+    "nombre": "Bautista Roa Branlly Nicolas",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1033682434",
+    "nombre": "Guevara Rios Marcela",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1033725690",
+    "nombre": "Melo Guzman Leidy Yisenia",
+    "total": 2,
+    "categorias": [
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
+      "MANEJO DEL ESTRÉS"
+    ]
+  },
+  {
+    "cedula": "1033741830",
+    "nombre": "Zambrano Saldaña Leidy Diana",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1033801033",
+    "nombre": "Chinchilla Prada Leidy Johana",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1034277886",
+    "nombre": "Varelas Segura Alison Sharik",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1053333929",
+    "nombre": "López Bravo Alan Jefri",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1065245112",
+    "nombre": "Martínez Cortes Angie Katherine",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1072198541",
+    "nombre": "Bello Simbaqueba Brandon Claver",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1073684866",
+    "nombre": "Diaz . Yeraldin Yecenia",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1073823086",
+    "nombre": "Martínez Martinez Javier Eduardo",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1077148914",
+    "nombre": "López Rojas Manuel Andrés",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1118071039",
+    "nombre": "Ortiz Leon Jhan Carlos",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1120841160",
+    "nombre": "Nova Largo Maryi Alexandra",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1137179111",
+    "nombre": "Manjarres Month Yina Maria",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1137189107",
+    "nombre": "Hernández Posada Franklin De Jesús",
+    "total": 1,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING"
+    ]
+  },
+  {
+    "cedula": "1193583743",
+    "nombre": "Herrera Arroyo Yuliana",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "GOBIERNO CORPORATIVO"
+    ]
+  },
+  {
+    "cedula": "1216976629",
+    "nombre": "Morales Vega José Miguel",
+    "total": 2,
+    "categorias": [
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
+      "MANEJO DEL ESTRÉS"
+    ]
+  },
+  {
+    "cedula": "1235253597",
+    "nombre": "Silva Torres María Elicenia",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "GOBIERNO CORPORATIVO"
+    ]
+  },
+  {
+    "cedula": "35511486",
+    "nombre": "Pinilla Ortega Maria Fernanda",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "37550909",
+    "nombre": "Ronderos Estevez Silvia",
+    "total": 3,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD",
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
+    ]
+  },
+  {
+    "cedula": "51693027",
+    "nombre": "Avila Gonzalez Marleny",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "52300814",
+    "nombre": "Franco Mendoza Marisol",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "52729957",
+    "nombre": "Valenzuela García Yerly Maritza",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "52734705",
+    "nombre": "Velasquez Hernández Diana Carolina",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "52849706",
+    "nombre": "Muñeton Gallo Maria Edelmira",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53010421",
+    "nombre": "Florez Ayala Claudia Marcela",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53043935",
+    "nombre": "Sarmiento Vanegas Sandra Milena",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53080821",
+    "nombre": "Espitia Cortes Jennifer Yolima",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "GOBIERNO CORPORATIVO",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "7384921",
+    "nombre": "Ayala Hernández Jesus Manuel",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "79915130",
+    "nombre": "Jiménez Bone William Alberto",
+    "total": 2,
+    "categorias": [
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN"
+    ]
+  },
+  {
+    "cedula": "79940474",
+    "nombre": "Quintero Trujillo Fernando Mauricio",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "79954070",
+    "nombre": "Villalba Alfonso Edicson Leonel",
+    "total": 2,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN"
+    ]
+  },
+  {
+    "cedula": "79957640",
+    "nombre": "Umbarila Castillo David Alexander",
+    "total": 1,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN"
+    ]
+  },
+  {
+    "cedula": "80000990",
+    "nombre": "Martinez Chitiva Pedro Leonardo",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1022408992",
+    "nombre": "Miguel Angel Rodriguez Viracacha",
     "total": 1,
     "categorias": [
       "Donación"
     ]
   },
   {
-    "cedula": "1095911559",
-    "nombre": "Leidy Jessenia Vargas",
+    "cedula": "52091050",
+    "nombre": "Lady Beltran",
     "total": 1,
     "categorias": [
       "Donación"
     ]
   },
   {
-    "cedula": "1073690441",
-    "nombre": "jesica tatiana  Garcia Casallas",
+    "cedula": "1124039058",
+    "nombre": "Yulibth lopez Duarte",
     "total": 1,
     "categorias": [
       "Donación"
     ]
   },
   {
-    "cedula": "52669143",
-    "nombre": "clara ines caraballo",
+    "cedula": "1000033231",
+    "nombre": "Mojica Linares Bayron Steban",
+    "total": 1,
+    "categorias": [
+      "CERTIFICACIÓN DE COMPETENCIAS"
+    ]
+  },
+  {
+    "cedula": "1000126434",
+    "nombre": "Rivillas Rojas Juan David",
+    "total": 4,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000179125",
+    "nombre": "González Cedeño Luis Alejandro",
+    "total": 4,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1000215860",
+    "nombre": "Aristizabal Valencia Lizeth Daniela",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1000379972",
+    "nombre": "Cárdenas González Nicolas",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000474673",
+    "nombre": "Rozo Escobar Jeisson Andres",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1000587869",
+    "nombre": "Bastidas Ruiz Chelsy Vannesa",
+    "total": 10,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD",
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1000590933",
+    "nombre": "Trillos Perdomo Juan Camilo",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1000732374",
+    "nombre": "Rodríguez Mendez Juan David",
+    "total": 2,
+    "categorias": [
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1000934944",
+    "nombre": "Penagos López Jenny Paola",
+    "total": 1,
+    "categorias": [
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1006002351",
+    "nombre": "Sánchez Rodríguez Yeimy Alejandra",
+    "total": 2,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1006580429",
+    "nombre": "Bonivento Bouriyu Iván David",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1007045630",
+    "nombre": "Prens Santana Daniel Jose",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1007105722",
+    "nombre": "Mateus Cortes Heidy Dayana",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1010040919",
+    "nombre": "Gomez Ospina Juan David",
+    "total": 1,
+    "categorias": [
+      "CERTIFICACIÓN DE COMPETENCIAS"
+    ]
+  },
+  {
+    "cedula": "1010152189",
+    "nombre": "Salcedo Feria Jhon Fredy",
+    "total": 1,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING"
+    ]
+  },
+  {
+    "cedula": "1010224305",
+    "nombre": "Corredor Manrique Lina Maria",
+    "total": 8,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN",
+      "GOBIERNO CORPORATIVO",
+      "REINDUCCIÓN HSE",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1012380363",
+    "nombre": "Castillo Murillo Eilyn Milena",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1012383197",
+    "nombre": "Paez Poveda Cristhian Ricardo",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1012417977",
+    "nombre": "Bonilla Ospina Yuceyra",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1012460295",
+    "nombre": "Mora Ramirez Sharon Dayane",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1013576548",
+    "nombre": "Trujillo Perdomo Keren Lorena",
+    "total": 2,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1013672961",
+    "nombre": "Bastidas Lopez Katerine Nicoll",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1014211279",
+    "nombre": "Ramirez Pinto Adriana Marcela",
+    "total": 2,
+    "categorias": [
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1015415830",
+    "nombre": "Fonseca Vargas Cindy Paola",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1018501140",
+    "nombre": "Silva Zamora Heidi Julied",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1019024825",
+    "nombre": "Camacho Molina Angela Mayerli",
+    "total": 1,
+    "categorias": [
+      "CAPACITACION SARLAF"
+    ]
+  },
+  {
+    "cedula": "1022335766",
+    "nombre": "Tenjo . Gisela Andrea",
+    "total": 1,
+    "categorias": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1022982149",
+    "nombre": "Moreno Rodriguez Brayan Sneeyder",
+    "total": 1,
+    "categorias": [
+      "REINDUCCIÓN HSE"
+    ]
+  },
+  {
+    "cedula": "1023031466",
+    "nombre": "Gomez Herrera Laura Bibiana",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1023035216",
+    "nombre": "Rojas Romero Jenny Paola",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1023861942",
+    "nombre": "Arango Ariza Maria Indira",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1023890987",
+    "nombre": "Merchan Peña Heilyn Valentina",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
+    ]
+  },
+  {
+    "cedula": "1024561944",
+    "nombre": "Paredes Tiria Angie Stefannia",
+    "total": 3,
+    "categorias": [
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1024598419",
+    "nombre": "Vargas Manchola Diego Fernando",
+    "total": 1,
+    "categorias": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1028661319",
+    "nombre": "Peña Castro Ferney Duvan",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1028820484",
+    "nombre": "Gamez Calderón Ander Yasir",
+    "total": 1,
+    "categorias": [
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1030640262",
+    "nombre": "Chaparro Henao Luisa Fernanda",
+    "total": 3,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1030691997",
+    "nombre": "Restrepo Clavijo Jonathan Stiven",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1030694403",
+    "nombre": "Bautista Roa Branlly Nicolas",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1033682434",
+    "nombre": "Guevara Rios Marcela",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "1033725690",
+    "nombre": "Melo Guzman Leidy Yisenia",
+    "total": 2,
+    "categorias": [
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
+      "MANEJO DEL ESTRÉS"
+    ]
+  },
+  {
+    "cedula": "1033741830",
+    "nombre": "Zambrano Saldaña Leidy Diana",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1033801033",
+    "nombre": "Chinchilla Prada Leidy Johana",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1034277886",
+    "nombre": "Varelas Segura Alison Sharik",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1053333929",
+    "nombre": "López Bravo Alan Jefri",
+    "total": 4,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1065245112",
+    "nombre": "Martínez Cortes Angie Katherine",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1072198541",
+    "nombre": "Bello Simbaqueba Brandon Claver",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "1073684866",
+    "nombre": "Diaz . Yeraldin Yecenia",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1073823086",
+    "nombre": "Martínez Martinez Javier Eduardo",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1077148914",
+    "nombre": "López Rojas Manuel Andrés",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1118071039",
+    "nombre": "Ortiz Leon Jhan Carlos",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "1120841160",
+    "nombre": "Nova Largo Maryi Alexandra",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "1137179111",
+    "nombre": "Manjarres Month Yina Maria",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "1137189107",
+    "nombre": "Hernández Posada Franklin De Jesús",
+    "total": 1,
+    "categorias": [
+      "CURSOS DE CAPACITACIÓN PHISHING"
+    ]
+  },
+  {
+    "cedula": "1193583743",
+    "nombre": "Herrera Arroyo Yuliana",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "GOBIERNO CORPORATIVO"
+    ]
+  },
+  {
+    "cedula": "1216976629",
+    "nombre": "Morales Vega José Miguel",
+    "total": 2,
+    "categorias": [
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?",
+      "MANEJO DEL ESTRÉS"
+    ]
+  },
+  {
+    "cedula": "1235253597",
+    "nombre": "Silva Torres María Elicenia",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "GOBIERNO CORPORATIVO"
+    ]
+  },
+  {
+    "cedula": "35511486",
+    "nombre": "Pinilla Ortega Maria Fernanda",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EMPATIA"
+    ]
+  },
+  {
+    "cedula": "37550909",
+    "nombre": "Ronderos Estevez Silvia",
+    "total": 3,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD",
+      "¿CÓMO ALCANZAR UN ESTADO DE FLOW?"
+    ]
+  },
+  {
+    "cedula": "51693027",
+    "nombre": "Avila Gonzalez Marleny",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "52300814",
+    "nombre": "Franco Mendoza Marisol",
+    "total": 1,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "cedula": "52729957",
+    "nombre": "Valenzuela García Yerly Maritza",
+    "total": 2,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "52734705",
+    "nombre": "Velasquez Hernández Diana Carolina",
+    "total": 1,
+    "categorias": [
+      "EXCELENCIA EN EL SERVICIO"
+    ]
+  },
+  {
+    "cedula": "52849706",
+    "nombre": "Muñeton Gallo Maria Edelmira",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EXCELENCIA EN EL SERVICIO",
+      "GOBIERNO CORPORATIVO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53010421",
+    "nombre": "Florez Ayala Claudia Marcela",
+    "total": 3,
+    "categorias": [
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53043935",
+    "nombre": "Sarmiento Vanegas Sandra Milena",
+    "total": 2,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "53080821",
+    "nombre": "Espitia Cortes Jennifer Yolima",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "GOBIERNO CORPORATIVO",
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "7384921",
+    "nombre": "Ayala Hernández Jesus Manuel",
+    "total": 4,
+    "categorias": [
+      "CAPACITACION SARLAF",
+      "EL VALOR DE LA CREATIVIDAD EN LOS PROCESOS DE INTELIGENCIA ARTIFICIAL",
+      "EXCELENCIA EN EL SERVICIO",
+      "PROACTIVIDAD"
+    ]
+  },
+  {
+    "cedula": "79915130",
+    "nombre": "Jiménez Bone William Alberto",
+    "total": 2,
+    "categorias": [
+      "CURSO DE PREVENCIÓN DE ACOSO LABORAL Y SEXUAL",
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN"
+    ]
+  },
+  {
+    "cedula": "79940474",
+    "nombre": "Quintero Trujillo Fernando Mauricio",
+    "total": 1,
+    "categorias": [
+      "NINJA EXCEL"
+    ]
+  },
+  {
+    "cedula": "79954070",
+    "nombre": "Villalba Alfonso Edicson Leonel",
+    "total": 2,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN",
+      "EQUIDAD DIVERSIDAD E INCLUSIÓN"
+    ]
+  },
+  {
+    "cedula": "79957640",
+    "nombre": "Umbarila Castillo David Alexander",
+    "total": 1,
+    "categorias": [
+      "CURSO DE SEGURIDAD DE LA INFORMACIÓN"
+    ]
+  },
+  {
+    "cedula": "80000990",
+    "nombre": "Martinez Chitiva Pedro Leonardo",
+    "total": 1,
+    "categorias": [
+      "NUVA"
+    ]
+  },
+  {
+    "cedula": "1022408992",
+    "nombre": "Miguel Angel Rodriguez Viracacha",
     "total": 1,
     "categorias": [
       "Donación"
     ]
   },
   {
-    "cedula": "37723143",
-    "nombre": "Flor Angela rincon",
+    "cedula": "52091050",
+    "nombre": "Lady Beltran",
     "total": 1,
     "categorias": [
       "Donación"
     ]
   },
   {
-    "cedula": "52634355",
-    "nombre": "Martha sierra rodriguez",
+    "cedula": "1124039058",
+    "nombre": "Yulibth lopez Duarte",
     "total": 1,
     "categorias": [
       "Donación"
-    ]
-  },
-  {
-    "cedula": "39792486",
-    "nombre": "Miriam Hernandez",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "1066729378",
-    "nombre": "Jenifer Lopez Gil",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "35411784",
-    "nombre": "Margot Corredor Espinel",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "51957221",
-    "nombre": "Edit Yuliana Correa Casallas",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "80412022",
-    "nombre": "Jorge Ricaurte Villamarin",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "20644996",
-    "nombre": "Rosalba Rodriguez Peña",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "52387229",
-    "nombre": "Ana Yensy Velandia",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "52868749",
-    "nombre": "Monica Guerrero Coronado",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "51882517",
-    "nombre": "Nora Barbosa",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "1022375970",
-    "nombre": "Andrea Cortez",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "1020733893",
-    "nombre": "Milena Rodriguez",
-    "total": 1,
-    "categorias": [
-      "Donación"
-    ]
-  },
-  {
-    "cedula": "1022421215",
-    "nombre": "Paula Andrea Gomez Benitez",
-    "total": 1,
-    "categorias": [
-      "Juego de Equipares"
-    ]
-  },
-  {
-    "cedula": "1013646568",
-    "nombre": "Jhon Sebastián Piñeros Barrios",
-    "total": 1,
-    "categorias": [
-      "Juego de Equipares"
-    ]
-  },
-  {
-    "cedula": "1023950942",
-    "nombre": "Leidy Estefania Rodriguez Zarta",
-    "total": 1,
-    "categorias": [
-      "Juego de Equipares"
-    ]
-  },
-  {
-    "cedula": "52336478",
-    "nombre": "Alexandra Beltrán",
-    "total": 1,
-    "categorias": [
-      "Juego de Equipares"
     ]
   }
 ]
