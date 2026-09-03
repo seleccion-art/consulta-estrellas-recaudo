@@ -27,7 +27,7 @@
         <h2 class="section-header-title">Nuestro Programa Misión Excelencia RB</h2>
         <div class="info-box">
           <p>
-            Es la estrategia que tenemos en  <strong>Recaudo Bogotá </strong> para visibilizar, valorar y premiar tu compromiso diario. Reconocemos tu vivencia de valores, aprendizaje continuo, liderazgo y excelencia a través de nuestras cuatro estrellas:
+            Es la estrategia que tenemos en <strong>Recaudo Bogotá</strong> para visibilizar, valorar y premiar tu compromiso diario. Reconocemos tu vivencia de valores, aprendizaje continuo, liderazgo y excelencia a través de nuestras cuatro estrellas:
           </p>
         </div>
       </section>
@@ -55,7 +55,7 @@
           <div class="pilar-card pilar-morado">
             <img src="img/Lideres Inspiradores Que Movilizan.png" alt="Líderes Inspiradores" class="pilar-icon">
             <div class="pilar-info">
-              <h4> Líderes Inspiradores</h4>
+              <h4>Líderes Inspiradores</h4>
               <p>Premia el liderazgo transformacional, la gestión empática y tu participación activa en comités.</p>
             </div>
           </div>
@@ -63,11 +63,36 @@
           <div class="pilar-card pilar-amarillo">
             <img src="img/Colaboradores Estrella.png" alt="Colaboradores Estrella" class="pilar-icon">
             <div class="pilar-info">
-              <h4> Colaboradores(as) Estrella</h4>
+              <h4>Colaboradores(as) Estrella</h4>
               <p>Premia tus resultados superiores en la Evaluación de Desempeño y el cumplimiento de objetivos.</p>
             </div>
           </div>
 
+        </div>
+      </section>
+
+      <!-- INFORMACIÓN DE PUNTOS RB CONTIGO -->
+      <section class="section-container">
+        <div class="puntos-info-card">
+          <div class="puntos-header">
+            <span class="puntos-badge">Redención de Puntos</span>
+            <h3>¡Acumula estrellas y gana puntos en RB Contigo! 🎁</h3>
+          </div>
+          <p class="puntos-intro">
+            Tus logros y reconocimientos se convierten en beneficios reales. Por la acumulación de tus estrellas en <strong>Misión Excelencia RB</strong>, cargaremos puntos a tu cuenta de <strong>RB Contigo</strong> para que los redimas en cualquier comercio aliado:
+          </p>
+          <div class="puntos-grid">
+            <div class="punto-item">
+              <span class="punto-estrellas">⭐ 10 Estrellas</span>
+              <span class="punto-flecha">➔</span>
+              <span class="punto-valor">5.000 Puntos</span>
+            </div>
+            <div class="punto-item destacado">
+              <span class="punto-estrellas">⭐ 15 Estrellas</span>
+              <span class="punto-flecha">➔</span>
+              <span class="punto-valor">10.000 Puntos</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -187,7 +212,7 @@ function buscar() {
           <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="empty-logo" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
         </div>
         <h3>¡Tu momento de brillar está cerca!</h3>
-        <p>Aún no registras estrellas asignadas en el sistema, pero en <strong>Recaudo Bogotá </strong> confiamos en tu talento. Te invitamos a seguir dando lo mejor de ti, cumplir tus metas diarias y participar activamente en nuestras capacitaciones para que pronto recibas tus primeras estrellas de reconocimiento.</p>
+        <p>Aún no registras estrellas asignadas en el sistema, pero en <strong>Recaudo Bogotá</strong> confiamos en tu talento. Te invitamos a seguir dando lo mejor de ti, cumplir tus metas diarias y participar activamente en nuestras capacitaciones para que pronto recibas tus primeras estrellas de reconocimiento.</p>
         <span class="motto-tag">"Nos esforzamos para que las cosas pasen"</span>
       </div>
     `;
@@ -195,8 +220,6 @@ function buscar() {
   }
 
   lanzarEstrellas();
-
-  const mensaje = '¡Felicitaciones por tus logros! Por cada estrella que hayas ganado, te cargaremos 1.000 puntos en RB Contigo para que puedas redimirlos en cualquier comercio aliado en la plataforma.';
 
   const listaReconocimientos = persona.reconocimientos || persona.categorias || [];
   const reconocimientosValidos = listaReconocimientos.filter(c => c && String(c).trim() !== '');
@@ -233,8 +256,6 @@ function buscar() {
           </div>
         </div>
       </div>
-
-      <div class="mensaje-box">${mensaje}</div>
 
       <div class="badges-section">
         <p class="section-title">Reconocimientos asignados a la fecha:</p>
