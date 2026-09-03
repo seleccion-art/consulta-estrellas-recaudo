@@ -160,6 +160,7 @@
 
 <script>
 let datos = [];
+let personaActual = null; // Almacena el usuario consultado actualmente
 
 fetch('data.json')
   .then(res => res.json())
@@ -191,20 +192,20 @@ function lanzarEstrellas() {
 function obtenerEstrella(categoria) {
   const cat = String(categoria).trim().toLowerCase();
 
-  // Estrella Azul: Exclusiva para 'Valor de la Excelencia' (o variaciones de Esencia RB)
   if (cat.includes('valor de la excelencia') || cat === 'esencia rb') {
     return {
       img: 'img/Esencia RB.png',
       color: '#0284c7',
-      tipo: 'Estrella Azul'
+      tipo: 'Estrella Azul',
+      codigo: 'azul'
     };
   }
 
-  // Estrella Roja: Capacitaciones y demás reconocimientos (SARLAF, Ninja Excel, Cursos, etc.)
   return {
     img: 'img/Aprendemos y Aportamos en RB.png',
     color: '#dc2626',
-    tipo: 'Estrella Roja'
+    tipo: 'Estrella Roja',
+    codigo: 'roja'
   };
 }
 
@@ -225,9 +226,9 @@ function buscar() {
 
   btnLimpiar.style.display = 'block';
 
-  const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
+  personaActual = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
 
-  if (!persona) {
+  if (!personaActual) {
     resultado.innerHTML = `
       <div class="empty-state-card">
         <div class="empty-logo-wrapper">
@@ -243,12 +244,37 @@ function buscar() {
 
   lanzarEstrellas();
 
-  const listaReconocimientos = persona.reconocimientos || persona.categorias || [];
+  // Renderizar la tarjeta inicial con todos los reconocimientos
+  renderizarPerfil('todas');
+}
+
+function renderizarPerfil(filtroFoco = 'todas') {
+  if (!personaActual) return;
+
+  const listaReconocimientos = personaActual.reconocimientos || personaActual.categorias || [];
   const reconocimientosValidos = listaReconocimientos.filter(c => c && String(c).trim() !== '');
 
+  // Conteo de estrellas por tipo
+  let conteoRojas = 0;
+  let conteoAzules = 0;
+
+  reconocimientosValidos.forEach(cat => {
+    const est = obtenerEstrella(cat);
+    if (est.codigo === 'azul') conteoAzules++;
+    else conteoRojas++;
+  });
+
+  // Filtrar tarjetas según selección
+  const reconocimientosFiltrados = reconocimientosValidos.filter(cat => {
+    const est = obtenerEstrella(cat);
+    if (filtroFoco === 'rojas') return est.codigo === 'roja';
+    if (filtroFoco === 'azules') return est.codigo === 'azul';
+    return true;
+  });
+
   let reconocimientosHTML = '';
-  if (reconocimientosValidos.length > 0) {
-    reconocimientosValidos.forEach(cat => {
+  if (reconocimientosFiltrados.length > 0) {
+    reconocimientosFiltrados.forEach(cat => {
       const estrella = obtenerEstrella(cat);
       reconocimientosHTML += `
         <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
@@ -261,8 +287,10 @@ function buscar() {
       `;
     });
   } else {
-    reconocimientosHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin reconocimientos registrados.</p>';
+    reconocimientosHTML = `<p style="color: #64748b; font-size: 0.85rem; grid-column: 1 / -1; text-align: center; padding: 10px;">No se encontraron reconocimientos correspondientes al filtro seleccionado.</p>`;
   }
+
+  const resultado = document.getElementById('resultado');
 
   resultado.innerHTML = `
     <div class="profile-card fade-in">
@@ -271,19 +299,34 @@ function buscar() {
           <span class="profile-badge-tag">COLABORADOR(A) RECONOCIDO(A)</span>
         </div>
         
-        <h2 class="profile-name">${persona.nombre}</h2>
+        <h2 class="profile-name">${personaActual.nombre}</h2>
         
         <div class="stars-yellow-card">
           <span class="stars-label">TOTAL DE ESTRELLAS</span>
           <div class="stars-badge">
             <span class="star-icon">⭐</span>
-            <span class="stars-number">${persona.total}</span>
+            <span class="stars-number">${personaActual.total}</span>
           </div>
         </div>
       </div>
 
-      <div class="badges-section">
-        <p class="section-title">Reconocimientos asignados a la fecha:</p>
+      <!-- BOTONES DE FILTRO DINÁMICOS -->
+      <div class="filter-section" style="margin-top: 20px; text-align: center;">
+        <p class="section-title" style="margin-bottom: 10px;">Filtrar reconocimientos por estrella:</p>
+        <div class="filter-buttons-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+          <button class="btn-filter ${filtroFoco === 'todas' ? 'active' : ''}" onclick="filtrarEstrellas('todas')">
+            Todas (${reconocimientosValidos.length})
+          </button>
+          <button class="btn-filter btn-filter-roja ${filtroFoco === 'rojas' ? 'active' : ''}" onclick="filtrarEstrellas('rojas')">
+            🔴 Rojas (${conteoRojas})
+          </button>
+          <button class="btn-filter btn-filter-azul ${filtroFoco === 'azules' ? 'active' : ''}" onclick="filtrarEstrellas('azules')">
+            🔵 Azules (${conteoAzules})
+          </button>
+        </div>
+      </div>
+
+      <div class="badges-section" style="margin-top: 18px;">
         <div class="categorias-grid">
           ${reconocimientosHTML}
         </div>
@@ -292,7 +335,12 @@ function buscar() {
   `;
 }
 
+function filtrarEstrellas(tipo) {
+  renderizarPerfil(tipo);
+}
+
 function limpiar() {
+  personaActual = null;
   document.getElementById('cedula').value = '';
   document.getElementById('resultado').innerHTML = '';
   document.getElementById('error').innerHTML = '';
@@ -308,7 +356,6 @@ function abrirRanking() {
   if (!datos || datos.length === 0) {
     rankingLista.innerHTML = '<p style="text-align:center; color:#64748b;">No hay datos disponibles en el sistema.</p>';
   } else {
-    // Lanzar animación de estrellas al desplegar el Top 10
     lanzarEstrellas();
 
     const ordenados = [...datos].sort((a, b) => (Number(b.total) || 0) - (Number(a.total) || 0)).slice(0, 10);
