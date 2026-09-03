@@ -106,7 +106,9 @@
             <h3>🏆 Top 10 Colaboradores Estrella</h3>
             <p>Descubre quiénes lideran la tabla con más estrellas acumuladas en Recaudo Bogotá.</p>
           </div>
-          <button class="btn-ranking-action" onclick="abrirRanking()">Ver Ranking Top 10 ⭐</button>
+          <button type="button" class="btn-ranking-action" onclick="abrirRanking()">
+            <span>Ver Ranking Top 10</span> ⭐
+          </button>
         </div>
       </section>
 
@@ -137,7 +139,7 @@
     </footer>
   </div>
 
-  <!-- MODAL DE RANKING TOP 10 -->
+  <!-- MODAL DE RANKING TOP 10 (FLOTANTE SOBRE PANTALLA COMPLETA) -->
   <div id="modal-ranking" class="modal-overlay">
     <div class="modal-card fade-in">
       <div class="modal-header">
@@ -145,7 +147,7 @@
           <span class="modal-badge">Cuadro de Honor</span>
           <h2>🏆 Top 10 Colaboradores Estrella</h2>
         </div>
-        <button class="btn-close" onclick="cerrarRanking()">&times;</button>
+        <button type="button" class="btn-close" onclick="cerrarRanking()">&times;</button>
       </div>
       <div class="modal-body">
         <p class="modal-subtitle">Nuestros colaboradores con mayor número de estrellas acumuladas a la fecha:</p>
