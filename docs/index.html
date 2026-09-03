@@ -98,6 +98,18 @@
 
       <hr class="divider">
 
+      <!-- BANNER ACCESO AL RANKING TOP 10 -->
+      <section class="section-container">
+        <div class="ranking-banner-card">
+          <div class="ranking-banner-text">
+            <span class="ranking-banner-badge">CUADRO DE HONOR</span>
+            <h3>🏆 Top 10 Colaboradores Estrella</h3>
+            <p>Descubre quiénes lideran la tabla con más estrellas acumuladas en Recaudo Bogotá.</p>
+          </div>
+          <button class="btn-ranking-action" onclick="abrirRanking()">Ver Ranking Top 10 ⭐</button>
+        </div>
+      </section>
+
       <!-- CONSULTA DE CÉDULA -->
       <section class="section-container search-section">
         <h2 class="section-header-title">Consulta tus Reconocimientos</h2>
@@ -123,6 +135,25 @@
     <footer>
       Información tomada de la base oficial de reconocimientos | Recaudo Bogotá S.A.S.
     </footer>
+  </div>
+
+  <!-- MODAL DE RANKING TOP 10 -->
+  <div id="modal-ranking" class="modal-overlay">
+    <div class="modal-card fade-in">
+      <div class="modal-header">
+        <div class="modal-header-title">
+          <span class="modal-badge">Cuadro de Honor</span>
+          <h2>🏆 Top 10 Colaboradores Estrella</h2>
+        </div>
+        <button class="btn-close" onclick="cerrarRanking()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle">Nuestros colaboradores con mayor número de estrellas acumuladas a la fecha:</p>
+        <div id="ranking-lista" class="ranking-container">
+          <!-- Se carga mediante JS -->
+        </div>
+      </div>
+    </div>
   </div>
 
 <script>
@@ -274,6 +305,54 @@ function limpiar() {
   document.getElementById('btn-limpiar').style.display = 'none';
   document.getElementById('cedula').focus();
 }
+
+/* LÓGICA DEL RANKING */
+function abrirRanking() {
+  const rankingLista = document.getElementById('ranking-lista');
+  rankingLista.innerHTML = '';
+
+  if (!datos || datos.length === 0) {
+    rankingLista.innerHTML = '<p style="text-align:center; color:#64748b;">No hay datos disponibles en el sistema.</p>';
+  } else {
+    const ordenados = [...datos].sort((a, b) => (Number(b.total) || 0) - (Number(a.total) || 0)).slice(0, 10);
+
+    let html = '';
+    ordenados.forEach((item, index) => {
+      let medalla = `${index + 1}`;
+      let podioClase = '';
+
+      if (index === 0) { medalla = '🥇'; podioClase = 'oro'; }
+      else if (index === 1) { medalla = '🥈'; podioClase = 'plata'; }
+      else if (index === 2) { medalla = '🥉'; podioClase = 'bronce'; }
+
+      html += `
+        <div class="ranking-item ${podioClase}">
+          <div class="ranking-pos">${medalla}</div>
+          <div class="ranking-info">
+            <span class="ranking-nombre">${item.nombre}</span>
+          </div>
+          <div class="ranking-puntos">
+            <span>⭐ ${item.total}</span>
+          </div>
+        </div>
+      `;
+    });
+    rankingLista.innerHTML = html;
+  }
+
+  document.getElementById('modal-ranking').style.display = 'flex';
+}
+
+function cerrarRanking() {
+  document.getElementById('modal-ranking').style.display = 'none';
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById('modal-ranking');
+  if (event.target === modal) {
+    cerrarRanking();
+  }
+};
 </script>
 
 </body>
