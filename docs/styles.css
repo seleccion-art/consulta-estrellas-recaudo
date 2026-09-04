@@ -1,363 +1,755 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Misión Excelencia RB – Recaudo Bogotá</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
 
-<body>
-
-  <div class="card">
-    
-    <!-- ENCABEZADO -->
-    <div class="header">
-      <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="logo" onerror="this.onerror=null; this.style.display='none';">
-      <h1>MISIÓN EXCELENCIA RB</h1>
-      <p class="subtitle">Plan de Reconocimiento Corporativo 2026</p>
-      <p class="lema">"Nos esforzamos para que las cosas pasen"</p>
-    </div>
-
-    <div class="content">
-
-      <!-- INDUCCIÓN AL PROGRAMA -->
-      <section class="section-container">
-        <h2 class="section-header-title">Nuestro Programa Misión Excelencia RB</h2>
-        <div class="info-box">
-          <p>
-            Es la estrategia que tenemos en <strong>Recaudo Bogotá</strong> para visibilizar, valorar y premiar tu compromiso diario. Reconocemos tu vivencia de valores, aprendizaje continuo, liderazgo y excelencia a través de nuestras cuatro estrellas:
-          </p>
-        </div>
-      </section>
-
-      <!-- PILARES DE LAS ESTRELLAS -->
-      <section class="section-container">
-        <div class="pilares-grid">
-          
-          <div class="pilar-card pilar-azul">
-            <img src="img/Esencia RB.png" alt="Esencia RB" class="pilar-icon">
-            <div class="pilar-info">
-              <h4>Esencia RB</h4>
-              <p>Premia la integridad, la honestidad, el respeto, la creatividad, la equidad de género y tu vocación de servicio.</p>
-            </div>
-          </div>
-
-          <div class="pilar-card pilar-rojo">
-            <img src="img/Aprendemos y Aportamos en RB.png" alt="Aprendemos y Aportamos RB" class="pilar-icon">
-            <div class="pilar-info">
-              <h4>Aprendemos y Aportamos</h4>
-              <p>Premia tu participación destacada en capacitaciones, mallas formativas y tus ideas innovadoras.</p>
-            </div>
-          </div>
-
-          <div class="pilar-card pilar-morado">
-            <img src="img/Lideres Inspiradores Que Movilizan.png" alt="Líderes Inspiradores" class="pilar-icon">
-            <div class="pilar-info">
-              <h4>Líderes Inspiradores</h4>
-              <p>Premia el liderazgo transformacional, la gestión empática y tu participación activa en comités.</p>
-            </div>
-          </div>
-
-          <div class="pilar-card pilar-amarillo">
-            <img src="img/Colaboradores Estrella.png" alt="Colaboradores Estrella" class="pilar-icon">
-            <div class="pilar-info">
-              <h4>Colaboradores(as) Estrella</h4>
-              <p>Premia tus resultados superiores en la Evaluación de Desempeño y el cumplimiento de objetivos.</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- INFORMACIÓN DE PUNTOS RB CONTIGO -->
-      <section class="section-container">
-        <div class="puntos-info-card">
-          <div class="puntos-header">
-            <span class="puntos-badge">Redención de Puntos</span>
-            <h3>¡Acumula estrellas y gana puntos en RB Contigo! 🎁</h3>
-          </div>
-          <p class="puntos-intro">
-            Tus logros y reconocimientos se convierten en beneficios reales. Por la acumulación de tus estrellas en <strong>Misión Excelencia RB</strong>, cargaremos puntos a tu cuenta de <strong>RB Contigo</strong> para que los redimas en cualquier comercio aliado:
-          </p>
-          <div class="puntos-grid">
-            <div class="punto-item">
-              <span class="punto-estrellas">⭐ 10 Estrellas</span>
-              <span class="punto-flecha">➔</span>
-              <span class="punto-valor">5.000 Puntos</span>
-            </div>
-            <div class="punto-item destacado">
-              <span class="punto-estrellas">⭐ 15 Estrellas</span>
-              <span class="punto-flecha">➔</span>
-              <span class="punto-valor">10.000 Puntos</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="divider">
-
-      <!-- BANNER ACCESO AL RANKING TOP 10 -->
-      <section class="section-container">
-        <div class="ranking-banner-card">
-          <div class="ranking-banner-text">
-            <span class="ranking-banner-badge">CUADRO DE HONOR</span>
-            <h3>🏆 Top 10 Colaboradores Estrella</h3>
-            <p>Descubre quiénes lideran la tabla con más estrellas acumuladas en Recaudo Bogotá.</p>
-          </div>
-          <button type="button" class="btn-ranking-action" onclick="abrirRanking()">
-            <span>Ver Ranking Top 10</span> ⭐
-          </button>
-        </div>
-      </section>
-
-      <!-- CONSULTA DE CÉDULA -->
-      <section class="section-container search-section">
-        <h2 class="section-header-title">Consulta tus Reconocimientos</h2>
-        <p class="section-desc">Ingresa tu número de documento para consultar tus estrellas acumuladas y las categorías en las que has sido reconocido(a):</p>
-        
-        <div class="search-box">
-          <label for="cedula">Número de documento</label>
-          <div class="input-wrapper">
-            <input type="text" id="cedula" placeholder="Ingresa tu número de cédula" onkeyup="if(event.key==='Enter') buscar()">
-            <div class="button-group">
-              <button id="btn-buscar" class="btn-primary" onclick="buscar()">Consultar Estrellas</button>
-              <button id="btn-limpiar" class="btn-secondary" onclick="limpiar()" style="display: none;">Limpiar / Nueva Consulta</button>
-            </div>
-          </div>
-        </div>
-
-        <div id="error" class="error"></div>
-        <div id="resultado" class="resultado"></div>
-      </section>
-
-    </div>
-
-    <footer>
-      Información tomada de la base oficial de reconocimientos | Recaudo Bogotá S.A.S.
-    </footer>
-  </div>
-
-  <!-- MODAL DE RANKING TOP 10 (FLOTANTE SOBRE PANTALLA COMPLETA) -->
-  <div id="modal-ranking" class="modal-overlay">
-    <div class="modal-card fade-in">
-      <div class="modal-header">
-        <div class="modal-header-title">
-          <span class="modal-badge">Cuadro de Honor</span>
-          <h2>🏆 Top 10 Colaboradores Estrella</h2>
-        </div>
-        <button type="button" class="btn-close" onclick="cerrarRanking()">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p class="modal-subtitle">Nuestros colaboradores con mayor número de estrellas acumuladas a la fecha:</p>
-        <div id="ranking-lista" class="ranking-container">
-          <!-- Se carga mediante JS -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-<script>
-let datos = [];
-
-fetch('data.json')
-  .then(res => res.json())
-  .then(json => datos = json)
-  .catch(err => console.error('Error al cargar data.json:', err));
-
-function lanzarEstrellas() {
-  const defaults = {
-    spread: 360,
-    ticks: 80,
-    gravity: 0.6,
-    decay: 0.94,
-    startVelocity: 30,
-    shapes: ['star'],
-    colors: ['FFE100', 'FFBD00', 'EAB308', 'A78BFA', '7C3AED']
-  };
-
-  function shoot() {
-    confetti({ ...defaults, particleCount: 25, scalar: 1.2, shapes: ['star'] });
-    confetti({ ...defaults, particleCount: 15, scalar: 0.75, shapes: ['circle'] });
-  }
-
-  setTimeout(shoot, 0);
-  setTimeout(shoot, 150);
-  setTimeout(shoot, 300);
+:root {
+  --morado-principal: #6d28d9;
+  --morado-oscuro: #4c1d95;
+  --morado-suave: #f3e8ff;
+  --verde: #2FB36F;
+  --verde-hover: #25935a;
+  --gris-boton: #64748b;
+  --gris-hover: #475569;
+  --fondo: #f8fafc;
+  --texto: #0f172a;
+  --blanco: #ffffff;
 }
 
-function obtenerEstrella(categoria) {
-  const cat = categoria.toLowerCase().trim();
-
-  if (cat.includes('líder') || cat.includes('lider') || cat.includes('inspir') || 
-      cat.includes('moviliz') || cat.includes('brigad') || cat.includes('proyectos especiales') || 
-      cat.includes('convivencia') || cat.includes('copasst') || cat.includes('equipares') || 
-      cat.includes('clima') || cat.includes('influencia') || cat.includes('antiguedad') || 
-      cat.includes('antigüedad') || cat.includes('sostenibilidad') || cat.includes('eva. inversa') || 
-      cat.includes('encuesta') || cat.includes('directiv') || cat.includes('jefe') || cat.includes('gerente')) {
-    return { img: 'img/Lideres Inspiradores Que Movilizan.png', color: '#7c3aed' };
-  }
-
-  if (cat.includes('integridad') || cat.includes('honestidad') || cat.includes('respeto') || 
-      cat.includes('equidad') || cat.includes('excelencia') || cat.includes('creatividad') || 
-      cat.includes('esencia') || cat.includes('servicio')) {
-    return { img: 'img/Esencia RB.png', color: '#0284c7' };
-  }
-
-  if (cat.includes('capacitación') || cat.includes('capacitacion') || cat.includes('curso') || 
-      cat.includes('malla') || cat.includes('ubits') || cat.includes('semillero') || 
-      cat.includes('escuela') || cat.includes('talento') || cat.includes('servicio rb') || 
-      cat.includes('reconversión') || cat.includes('reconversion') || cat.includes('sarlaft') || 
-      cat.includes('hse') || cat.includes('acoso') || cat.includes('seguridad') || 
-      cat.includes('gobierno') || cat.includes('compras') || cat.includes('aportamos') || 
-      cat.includes('ninja') || cat.includes('flow') || cat.includes('estrés') || cat.includes('estres') ||
-      cat.includes('inteligencia') || cat.includes('ia') || cat.includes('empatia') || cat.includes('proactividad')) {
-    return { img: 'img/Aprendemos y Aportamos en RB.png', color: '#dc2626' };
-  }
-
-  return { img: 'img/Colaboradores Estrella.png', color: '#eab308' };
+* {
+  box-sizing: border-box;
 }
 
-function buscar() {
-  const cedulaInput = document.getElementById('cedula');
-  const cedula = cedulaInput.value.trim();
-  const resultado = document.getElementById('resultado');
-  const error = document.getElementById('error');
-  const btnLimpiar = document.getElementById('btn-limpiar');
-
-  resultado.innerHTML = '';
-  error.innerHTML = '';
-
-  if (!cedula) {
-    error.textContent = 'Por favor, ingresa tu número de documento.';
-    return;
-  }
-
-  btnLimpiar.style.display = 'block';
-
-  const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
-
-  if (!persona) {
-    resultado.innerHTML = `
-      <div class="empty-state-card">
-        <div class="empty-logo-wrapper">
-          <img src="img/logo-recaudo.png" alt="Recaudo Bogotá" class="empty-logo" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
-        </div>
-        <h3>¡Tu momento de brillar está cerca!</h3>
-        <p>Aún no registras estrellas asignadas en el sistema, pero en <strong>Recaudo Bogotá</strong> confiamos en tu talento. Te invitamos a seguir dando lo mejor de ti, cumplir tus metas diarias y participar activamente en nuestras capacitaciones para que pronto recibas tus primeras estrellas de reconocimiento.</p>
-        <span class="motto-tag">"Nos esforzamos para que las cosas pasen"</span>
-      </div>
-    `;
-    return;
-  }
-
-  lanzarEstrellas();
-
-  const listaReconocimientos = persona.reconocimientos || persona.categorias || [];
-  const reconocimientosValidos = listaReconocimientos.filter(c => c && String(c).trim() !== '');
-
-  let reconocimientosHTML = '';
-  if (reconocimientosValidos.length > 0) {
-    reconocimientosValidos.forEach(cat => {
-      const estrella = obtenerEstrella(cat);
-      reconocimientosHTML += `
-        <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
-          <img src="${estrella.img}" alt="Estrella" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
-          <span>${cat}</span>
-        </div>
-      `;
-    });
-  } else {
-    reconocimientosHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin reconocimientos registrados.</p>';
-  }
-
-  resultado.innerHTML = `
-    <div class="profile-card fade-in">
-      <div class="profile-header">
-        <div class="profile-top-bar">
-          <span class="profile-badge-tag">COLABORADOR(A) RECONOCIDO(A)</span>
-        </div>
-        
-        <h2 class="profile-name">${persona.nombre}</h2>
-        
-        <div class="stars-yellow-card">
-          <span class="stars-label">TOTAL DE ESTRELLAS</span>
-          <div class="stars-badge">
-            <span class="star-icon">⭐</span>
-            <span class="stars-number">${persona.total}</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="badges-section">
-        <p class="section-title">Reconocimientos asignados a la fecha:</p>
-        <div class="categorias-grid">
-          ${reconocimientosHTML}
-        </div>
-      </div>
-    </div>
-  `;
+body {
+  margin: 0;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--fondo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px 16px;
+  color: var(--texto);
 }
 
-function limpiar() {
-  document.getElementById('cedula').value = '';
-  document.getElementById('resultado').innerHTML = '';
-  document.getElementById('error').innerHTML = '';
-  document.getElementById('btn-limpiar').style.display = 'none';
-  document.getElementById('cedula').focus();
+.card {
+  background: var(--blanco);
+  width: 100%;
+  max-width: 780px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* LÓGICA DEL RANKING */
-function abrirRanking() {
-  lanzarEstrellas(); // Animación de estrellas al abrir ranking
+/* ENCABEZADO */
+.header {
+  background: linear-gradient(135deg, #2e1065 0%, #4c1d95 50%, #6d28d9 100%);
+  padding: 32px 24px 28px 24px;
+  text-align: center;
+  border-bottom: 4px solid #a78bfa;
+}
 
-  const rankingLista = document.getElementById('ranking-lista');
-  rankingLista.innerHTML = '';
+.logo {
+  max-width: 170px !important;
+  max-height: 60px !important;
+  width: auto !important;
+  height: auto !important;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
 
-  if (!datos || datos.length === 0) {
-    rankingLista.innerHTML = '<p style="text-align:center; color:#64748b;">No hay datos disponibles en el sistema.</p>';
-  } else {
-    const ordenados = [...datos].sort((a, b) => (Number(b.total) || 0) - (Number(a.total) || 0)).slice(0, 10);
+.header h1 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
 
-    let html = '';
-    ordenados.forEach((item, index) => {
-      let medalla = `${index + 1}`;
-      let podioClase = '';
+.header .subtitle {
+  font-size: 14px;
+  margin: 6px 0 4px 0;
+  font-weight: 600;
+  color: #ddd6fe;
+}
 
-      if (index === 0) { medalla = '🥇'; podioClase = 'oro'; }
-      else if (index === 1) { medalla = '🥈'; podioClase = 'plata'; }
-      else if (index === 2) { medalla = '🥉'; podioClase = 'bronce'; }
+.header .lema {
+  font-size: 13px;
+  margin: 0;
+  font-style: italic;
+  color: #c4b5fd;
+}
 
-      html += `
-        <div class="ranking-item ${podioClase}">
-          <div class="ranking-pos">${medalla}</div>
-          <div class="ranking-info">
-            <span class="ranking-nombre">${item.nombre}</span>
-          </div>
-          <div class="ranking-puntos">
-            <span>⭐ ${item.total}</span>
-          </div>
-        </div>
-      `;
-    });
-    rankingLista.innerHTML = html;
+/* CONTENIDO */
+.content {
+  padding: 30px 26px;
+}
+
+.section-container {
+  margin-bottom: 26px;
+}
+
+.section-header-title {
+  font-size: 18px;
+  color: var(--morado-oscuro);
+  margin: 0 0 12px 0;
+  font-weight: 800;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 6px;
+}
+
+.section-desc {
+  font-size: 14px;
+  color: #475569;
+  margin: 0 0 14px 0;
+  line-height: 1.5;
+}
+
+.info-box {
+  background: #f8fafc;
+  border-left: 4px solid var(--morado-principal);
+  padding: 14px 16px;
+  border-radius: 10px;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+/* PILARES */
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.pilar-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.pilar-card img.pilar-icon {
+  width: 42px !important;
+  height: 42px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
+
+.pilar-info h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.pilar-info p {
+  margin: 3px 0 0 0;
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+.pilar-azul { border-left: 4px solid #0284c7; }
+.pilar-rojo { border-left: 4px solid #dc2626; }
+.pilar-morado { border-left: 4px solid #7c3aed; }
+.pilar-amarillo { border-left: 4px solid #eab308; }
+
+/* SECCIÓN TARJETA DE PUNTOS RB CONTIGO */
+.puntos-info-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1.5px solid #86efac;
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.08);
+}
+
+.puntos-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.puntos-badge {
+  align-self: flex-start;
+  background: #166534;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.puntos-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: #14532d;
+}
+
+.puntos-intro {
+  font-size: 13.5px;
+  color: #166534;
+  margin: 0 0 14px 0;
+  line-height: 1.5;
+}
+
+.puntos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.punto-item {
+  background: #ffffff;
+  border: 1px solid #bbf7d0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.punto-item.destacado {
+  border: 1.5px solid #22c55e;
+  background: #f0fdf4;
+}
+
+.punto-estrellas {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #15803d;
+}
+
+.punto-flecha {
+  color: #22c55e;
+  font-weight: 800;
+}
+
+.punto-valor {
+  font-size: 14px;
+  font-weight: 800;
+  color: #166534;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 28px 0;
+}
+
+/* BANNER TARJETA DE RANKING */
+.ranking-banner-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-left: 5px solid #6d28d9;
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  flex-wrap: wrap;
+}
+
+.ranking-banner-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.ranking-banner-badge {
+  background: #f3e8ff;
+  color: #6d28d9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.ranking-banner-text h3 {
+  margin: 8px 0 4px 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.ranking-banner-text p {
+  margin: 0;
+  font-size: 13.5px;
+  color: #64748b;
+}
+
+/* BOTÓN DE RANKING */
+.btn-ranking-action {
+  background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(109, 40, 217, 0.25);
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.btn-ranking-action:hover {
+  background: linear-gradient(135deg, #3b0764 0%, #5b21b6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(109, 40, 217, 0.35);
+}
+
+.btn-ranking-action:active {
+  transform: translateY(0);
+}
+
+/* SECCIÓN BÚSQUEDA Y BOTONES */
+.search-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1.5px solid #cbd5e1;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s;
+}
+
+input:focus {
+  border-color: var(--morado-principal);
+  box-shadow: 0 0 0 4px rgba(109, 40, 217, 0.12);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  flex: 1;
+  padding: 13px 20px;
+  background-color: var(--verde);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.btn-primary:hover {
+  background-color: var(--verde-hover);
+}
+
+.btn-secondary {
+  flex: 1;
+  padding: 13px 20px;
+  background-color: var(--gris-boton);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.btn-secondary:hover {
+  background-color: var(--gris-hover);
+}
+
+/* TARJETA DE PERFIL Y RECONOCIMIENTOS */
+.profile-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 26px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+  margin-top: 20px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.profile-top-bar {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.profile-badge-tag {
+  background: var(--morado-suave);
+  color: var(--morado-oscuro);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd6fe;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 16px 0 20px 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.stars-yellow-card {
+  background: #fefce8;
+  border: 2px solid #fde047;
+  padding: 12px 20px;
+  border-radius: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(234, 179, 8, 0.15);
+}
+
+.stars-yellow-card .stars-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #854d0e;
+  text-transform: uppercase;
+}
+
+.stars-yellow-card .stars-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars-yellow-card .star-icon {
+  font-size: 22px;
+}
+
+.stars-yellow-card .stars-number {
+  font-size: 26px;
+  font-weight: 800;
+  color: #713f12;
+}
+
+.badges-section {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--texto);
+  margin-bottom: 12px;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+/* INSIGNIA DE CADA RECONOCIMIENTO CON FRANJA Y ESTRELLA CORRESPONDIENTE */
+.badge-star {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.badge-star img,
+.star-badge-icon {
+  width: 28px !important;
+  height: 28px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
+
+/* ESTADO VACÍO */
+.empty-state-card {
+  text-align: center;
+  background: #ffffff;
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 20px;
+  padding: 32px 24px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.empty-logo-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-logo {
+  max-width: 160px !important;
+  max-height: 55px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.empty-state-card h3 {
+  margin: 0 0 10px 0;
+  color: var(--morado-oscuro);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.empty-state-card p {
+  margin: 0 auto 18px auto;
+  max-width: 500px;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+  font-weight: 450;
+}
+
+.motto-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-style: italic;
+  background: var(--morado-suave);
+  color: var(--morado-oscuro);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  font-size: 12px;
+  color: #94a3b8;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* MODAL DE RANKING */
+.modal-overlay {
+  display: none;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  z-index: 99999 !important;
+  padding: 16px;
+}
+
+.modal-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 85vh;
+  margin: auto;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #2e1065 0%, #4c1d95 100%);
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #a78bfa;
+}
+
+.modal-header-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modal-badge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #ddd6fe;
+  text-transform: uppercase;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.btn-close {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 22px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.btn-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0 0 14px 0;
+}
+
+.ranking-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  gap: 12px;
+}
+
+.ranking-pos {
+  font-size: 15px;
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2e8f0;
+  border-radius: 50%;
+  color: #475569;
+  flex-shrink: 0;
+}
+
+.ranking-info {
+  flex: 1;
+}
+
+.ranking-nombre {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1e293b;
+  display: block;
+}
+
+.ranking-puntos {
+  font-size: 14px;
+  font-weight: 800;
+  color: #854d0e;
+  background: #fefce8;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid #fde047;
+  flex-shrink: 0;
+}
+
+.ranking-item.oro {
+  background: linear-gradient(135deg, #fefce8 0%, #fef08a 100%);
+  border: 1.5px solid #eab308;
+}
+
+.ranking-item.plata {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border: 1.5px solid #94a3b8;
+}
+
+.ranking-item.bronce {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border: 1.5px solid #f97316;
+}
+
+.fade-in {
+  animation: fadeInUp 0.25s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-
-  document.getElementById('modal-ranking').style.display = 'flex';
-}
-
-function cerrarRanking() {
-  document.getElementById('modal-ranking').style.display = 'none';
-}
-
-window.onclick = function(event) {
-  const modal = document.getElementById('modal-ranking');
-  if (event.target === modal) {
-    cerrarRanking();
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-};
-</script>
-
-</body>
-</html>
+}
