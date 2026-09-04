@@ -40,7 +40,7 @@
             <img src="img/Esencia RB.png" alt="Esencia RB" class="pilar-icon">
             <div class="pilar-info">
               <h4>Esencia RB</h4>
-              <p>Premia la integridad, la honestidad, el respeto, la creatividad, la equidad de género y tu vocación de servicio.</p>
+              <p>Premia la integridad, la honestidad, el respeto, la creatividad y el valor de la excelencia.</p>
             </div>
           </div>
 
@@ -48,7 +48,7 @@
             <img src="img/Aprendemos y Aportamos en RB.png" alt="Aprendemos y Aportamos RB" class="pilar-icon">
             <div class="pilar-info">
               <h4>Aprendemos y Aportamos</h4>
-              <p>Premia tu participación destacada en capacitaciones, mallas formativas y tus ideas innovadoras.</p>
+              <p>Premia tu participación en capacitaciones, IA, equidad de género, donaciones y servicio.</p>
             </div>
           </div>
 
@@ -56,7 +56,7 @@
             <img src="img/Lideres Inspiradores Que Movilizan.png" alt="Líderes Inspiradores" class="pilar-icon">
             <div class="pilar-info">
               <h4>Líderes Inspiradores</h4>
-              <p>Premia el liderazgo transformacional, la gestión empática y tu participación activa en comités.</p>
+              <p>Premia el liderazgo transformacional, la gestión empática y tu participación en comités.</p>
             </div>
           </div>
 
@@ -64,7 +64,7 @@
             <img src="img/Colaboradores Estrella.png" alt="Colaboradores Estrella" class="pilar-icon">
             <div class="pilar-info">
               <h4>Colaboradores(as) Estrella</h4>
-              <p>Premia tus resultados superiores en la Evaluación de Desempeño y el cumplimiento de objetivos.</p>
+              <p>Premia tus resultados superiores en la Evaluación de Desempeño y cumplimiento de objetivos.</p>
             </div>
           </div>
 
@@ -139,7 +139,7 @@
     </footer>
   </div>
 
-  <!-- MODAL DE RANKING TOP 10 (FLOTANTE SOBRE PANTALLA COMPLETA) -->
+  <!-- MODAL DE RANKING TOP 10 -->
   <div id="modal-ranking" class="modal-overlay">
     <div class="modal-card fade-in">
       <div class="modal-header">
@@ -190,32 +190,38 @@ function lanzarEstrellas() {
 function obtenerEstrella(categoria) {
   const cat = categoria.toLowerCase().trim();
 
+  // 1. Líderes Inspiradores Que Movilizan (Estrella Morada)
   if (cat.includes('líder') || cat.includes('lider') || cat.includes('inspir') || 
       cat.includes('moviliz') || cat.includes('brigad') || cat.includes('proyectos especiales') || 
-      cat.includes('convivencia') || cat.includes('copasst') || cat.includes('equipares') || 
+      cat.includes('convivencia') || cat.includes('copasst') || 
       cat.includes('clima') || cat.includes('influencia') || cat.includes('antiguedad') || 
       cat.includes('antigüedad') || cat.includes('sostenibilidad') || cat.includes('eva. inversa') || 
       cat.includes('encuesta') || cat.includes('directiv') || cat.includes('jefe') || cat.includes('gerente')) {
     return { img: 'img/Lideres Inspiradores Que Movilizan.png', color: '#7c3aed' };
   }
 
-  if (cat.includes('integridad') || cat.includes('honestidad') || cat.includes('respeto') || 
-      cat.includes('equidad') || cat.includes('excelencia') || cat.includes('creatividad') || 
-      cat.includes('esencia') || cat.includes('servicio')) {
-    return { img: 'img/Esencia RB.png', color: '#0284c7' };
-  }
-
+  // 2. Aprendemos y Aportamos en RB (Estrella Roja)
+  // Incluye capacitaciones, IA, NUVA, Equipares, Donación, Servicio, Contratos, etc.
   if (cat.includes('capacitación') || cat.includes('capacitacion') || cat.includes('curso') || 
       cat.includes('malla') || cat.includes('ubits') || cat.includes('semillero') || 
-      cat.includes('escuela') || cat.includes('talento') || cat.includes('servicio rb') || 
-      cat.includes('reconversión') || cat.includes('reconversion') || cat.includes('sarlaft') || 
+      cat.includes('escuela') || cat.includes('talento') || cat.includes('servicio') || 
+      cat.includes('reconversión') || cat.includes('reconversion') || cat.includes('sarlaf') || 
       cat.includes('hse') || cat.includes('acoso') || cat.includes('seguridad') || 
       cat.includes('gobierno') || cat.includes('compras') || cat.includes('aportamos') || 
       cat.includes('ninja') || cat.includes('flow') || cat.includes('estrés') || cat.includes('estres') ||
-      cat.includes('inteligencia') || cat.includes('ia') || cat.includes('empatia') || cat.includes('proactividad')) {
+      cat.includes('inteligencia') || cat.includes('ia') || cat.includes('empatia') || cat.includes('proactividad') ||
+      cat.includes('equidad') || cat.includes('equipares') || cat.includes('donación') || cat.includes('donacion') ||
+      cat.includes('contratos') || cat.includes('nuva')) {
     return { img: 'img/Aprendemos y Aportamos en RB.png', color: '#dc2626' };
   }
 
+  // 3. Esencia RB (Estrella Azul)
+  if (cat.includes('integridad') || cat.includes('honestidad') || cat.includes('respeto') || 
+      cat.includes('creatividad') || cat.includes('esencia') || cat.includes('valor de la excelencia')) {
+    return { img: 'img/Esencia RB.png', color: '#0284c7' };
+  }
+
+  // 4. Colaboradores(as) Estrella (Estrella Amarilla - Por Defecto)
   return { img: 'img/Colaboradores Estrella.png', color: '#eab308' };
 }
 
@@ -310,7 +316,7 @@ function limpiar() {
 
 /* LÓGICA DEL RANKING */
 function abrirRanking() {
-  lanzarEstrellas(); // Animación de estrellas al abrir ranking
+  lanzarEstrellas();
 
   const rankingLista = document.getElementById('ranking-lista');
   rankingLista.innerHTML = '';
