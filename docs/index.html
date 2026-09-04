@@ -98,16 +98,16 @@
 
       <hr class="divider">
 
-      <!-- BANNER ACCESO AL RANKING TOP 10 CON FONDO DESTACADO -->
+      <!-- BANNER ACCESO AL RANKING TOP 10 (TEXTO MORADO Y BOTÓN DORADO) -->
       <section class="section-container">
         <div class="ranking-banner-card">
           <div class="ranking-banner-text">
-            <span class="ranking-banner-badge">CUADRO DE HONOR</span>
-            <h3>🏆 Top 10 Colaboradores Estrella</h3>
-            <p>Descubre quiénes lideran la tabla con más estrellas acumuladas en Recaudo Bogotá.</p>
+            <span class="ranking-banner-badge" style="background-color: #6d28d9; color: #ffffff;">CUADRO DE HONOR</span>
+            <h3 style="color: #4c1d95; font-size: 1.2rem; font-weight: 800; margin-top: 6px;">🏆 Top 10 Colaboradores Estrella</h3>
+            <p style="color: #6b21a8; font-size: 0.9rem; font-weight: 500;">Descubre quiénes lideran la tabla con más estrellas acumuladas en Recaudo Bogotá.</p>
           </div>
-          <button type="button" class="btn-ranking-action" onclick="abrirRanking()">
-            <span>Ver Ranking Top 10</span> ⭐
+          <button type="button" class="btn-ranking-action" onclick="abrirRanking()" style="background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); color: #422006; border: none; box-shadow: 0 4px 12px rgba(202, 138, 4, 0.35);">
+            <span style="font-weight: 800;">Ver Ranking Top 10</span> ⭐
           </button>
         </div>
       </section>
@@ -195,15 +195,13 @@ function obtenerEstrella(categoria) {
   if (cat.includes('valor de la excelencia') || cat === 'esencia rb') {
     return {
       img: 'img/Esencia RB.png',
-      color: '#0284c7',
-      codigo: 'azul'
+      color: '#0284c7'
     };
   }
 
   return {
     img: 'img/Aprendemos y Aportamos en RB.png',
-    color: '#dc2626',
-    codigo: 'roja'
+    color: '#dc2626'
   };
 }
 
@@ -241,26 +239,18 @@ function buscar() {
   }
 
   lanzarEstrellas();
-  renderizarPerfil('todas');
+  renderizarPerfil();
 }
 
-function renderizarPerfil(filtroFoco = 'todas') {
+function renderizarPerfil() {
   if (!personaActual) return;
 
   const listaReconocimientos = personaActual.reconocimientos || personaActual.categorias || [];
   const reconocimientosValidos = listaReconocimientos.filter(c => c && String(c).trim() !== '');
 
-  // Filtrar tarjetas según selección
-  const reconocimientosFiltrados = reconocimientosValidos.filter(cat => {
-    const est = obtenerEstrella(cat);
-    if (filtroFoco === 'rojas') return est.codigo === 'roja';
-    if (filtroFoco === 'azules') return est.codigo === 'azul';
-    return true;
-  });
-
   let reconocimientosHTML = '';
-  if (reconocimientosFiltrados.length > 0) {
-    reconocimientosFiltrados.forEach(cat => {
+  if (reconocimientosValidos.length > 0) {
+    reconocimientosValidos.forEach(cat => {
       const estrella = obtenerEstrella(cat);
       reconocimientosHTML += `
         <div class="badge-star" style="border-left: 4px solid ${estrella.color}; align-items: center;">
@@ -270,7 +260,7 @@ function renderizarPerfil(filtroFoco = 'todas') {
       `;
     });
   } else {
-    reconocimientosHTML = `<p style="color: #64748b; font-size: 0.85rem; grid-column: 1 / -1; text-align: center; padding: 10px;">No se encontraron reconocimientos correspondientes al filtro seleccionado.</p>`;
+    reconocimientosHTML = `<p style="color: #64748b; font-size: 0.85rem; grid-column: 1 / -1; text-align: center; padding: 10px;">No hay reconocimientos registrados.</p>`;
   }
 
   const resultado = document.getElementById('resultado');
@@ -293,33 +283,13 @@ function renderizarPerfil(filtroFoco = 'todas') {
         </div>
       </div>
 
-      <!-- BOTONES DE FILTRO (SIN CONTADORES Y RENOMBRADOS) -->
-      <div class="filter-section" style="margin-top: 20px; text-align: center;">
-        <p class="section-title" style="margin-bottom: 10px; font-weight: 700;">Filtrar reconocimientos por estrella:</p>
-        <div class="filter-buttons-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
-          <button class="btn-filter ${filtroFoco === 'todas' ? 'active' : ''}" onclick="filtrarEstrellas('todas')">
-            Todas
-          </button>
-          <button class="btn-filter btn-filter-roja ${filtroFoco === 'rojas' ? 'active' : ''}" onclick="filtrarEstrellas('rojas')">
-            🔴 Aprendemos y Aportamos
-          </button>
-          <button class="btn-filter btn-filter-azul ${filtroFoco === 'azules' ? 'active' : ''}" onclick="filtrarEstrellas('azules')">
-            🔵 Esencia RB
-          </button>
-        </div>
-      </div>
-
-      <div class="badges-section" style="margin-top: 18px;">
+      <div class="badges-section" style="margin-top: 24px;">
         <div class="categorias-grid">
           ${reconocimientosHTML}
         </div>
       </div>
     </div>
   `;
-}
-
-function filtrarEstrellas(tipo) {
-  renderizarPerfil(tipo);
 }
 
 function limpiar() {
