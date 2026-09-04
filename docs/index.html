@@ -98,7 +98,7 @@
 
       <hr class="divider">
 
-      <!-- BANNER ACCESO AL RANKING TOP 10 -->
+      <!-- BANNER ACCESO AL RANKING TOP 10 CON FONDO DESTACADO -->
       <section class="section-container">
         <div class="ranking-banner-card">
           <div class="ranking-banner-text">
@@ -160,7 +160,7 @@
 
 <script>
 let datos = [];
-let personaActual = null; // Almacena el usuario consultado actualmente
+let personaActual = null;
 
 fetch('data.json')
   .then(res => res.json())
@@ -196,7 +196,6 @@ function obtenerEstrella(categoria) {
     return {
       img: 'img/Esencia RB.png',
       color: '#0284c7',
-      tipo: 'Estrella Azul',
       codigo: 'azul'
     };
   }
@@ -204,7 +203,6 @@ function obtenerEstrella(categoria) {
   return {
     img: 'img/Aprendemos y Aportamos en RB.png',
     color: '#dc2626',
-    tipo: 'Estrella Roja',
     codigo: 'roja'
   };
 }
@@ -243,8 +241,6 @@ function buscar() {
   }
 
   lanzarEstrellas();
-
-  // Renderizar la tarjeta inicial con todos los reconocimientos
   renderizarPerfil('todas');
 }
 
@@ -253,16 +249,6 @@ function renderizarPerfil(filtroFoco = 'todas') {
 
   const listaReconocimientos = personaActual.reconocimientos || personaActual.categorias || [];
   const reconocimientosValidos = listaReconocimientos.filter(c => c && String(c).trim() !== '');
-
-  // Conteo de estrellas por tipo
-  let conteoRojas = 0;
-  let conteoAzules = 0;
-
-  reconocimientosValidos.forEach(cat => {
-    const est = obtenerEstrella(cat);
-    if (est.codigo === 'azul') conteoAzules++;
-    else conteoRojas++;
-  });
 
   // Filtrar tarjetas según selección
   const reconocimientosFiltrados = reconocimientosValidos.filter(cat => {
@@ -277,12 +263,9 @@ function renderizarPerfil(filtroFoco = 'todas') {
     reconocimientosFiltrados.forEach(cat => {
       const estrella = obtenerEstrella(cat);
       reconocimientosHTML += `
-        <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
-          <img src="${estrella.img}" alt="${estrella.tipo}" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
-          <div style="display:flex; flex-direction:column;">
-            <span style="font-size:0.75rem; color:${estrella.color}; font-weight:800;">${estrella.tipo}</span>
-            <span>${cat}</span>
-          </div>
+        <div class="badge-star" style="border-left: 4px solid ${estrella.color}; align-items: center;">
+          <img src="${estrella.img}" alt="Estrella" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
+          <span style="font-weight: 700; color: #1e293b;">${cat}</span>
         </div>
       `;
     });
@@ -310,18 +293,18 @@ function renderizarPerfil(filtroFoco = 'todas') {
         </div>
       </div>
 
-      <!-- BOTONES DE FILTRO DINÁMICOS -->
+      <!-- BOTONES DE FILTRO (SIN CONTADORES Y RENOMBRADOS) -->
       <div class="filter-section" style="margin-top: 20px; text-align: center;">
-        <p class="section-title" style="margin-bottom: 10px;">Filtrar reconocimientos por estrella:</p>
+        <p class="section-title" style="margin-bottom: 10px; font-weight: 700;">Filtrar reconocimientos por estrella:</p>
         <div class="filter-buttons-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
           <button class="btn-filter ${filtroFoco === 'todas' ? 'active' : ''}" onclick="filtrarEstrellas('todas')">
-            Todas (${reconocimientosValidos.length})
+            Todas
           </button>
           <button class="btn-filter btn-filter-roja ${filtroFoco === 'rojas' ? 'active' : ''}" onclick="filtrarEstrellas('rojas')">
-            🔴 Rojas (${conteoRojas})
+            🔴 Aprendemos y Aportamos
           </button>
           <button class="btn-filter btn-filter-azul ${filtroFoco === 'azules' ? 'active' : ''}" onclick="filtrarEstrellas('azules')">
-            🔵 Azules (${conteoAzules})
+            🔵 Esencia RB
           </button>
         </div>
       </div>
