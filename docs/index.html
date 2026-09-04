@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <title>Misión Excelencia RB – Recaudo Bogotá</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Carga del archivo CSS con parámetro para prevenir caché -->
+  <link rel="stylesheet" href="styles.css?v=1.0">
+  
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 
@@ -151,9 +154,7 @@
       </div>
       <div class="modal-body">
         <p class="modal-subtitle">Nuestros colaboradores con mayor número de estrellas acumuladas a la fecha:</p>
-        <div id="ranking-lista" class="ranking-container">
-          <!-- Se carga mediante JS -->
-        </div>
+        <div id="ranking-lista" class="ranking-container"></div>
       </div>
     </div>
   </div>
@@ -201,7 +202,6 @@ function obtenerEstrella(categoria) {
   }
 
   // 2. Aprendemos y Aportamos en RB (Estrella Roja)
-  // Incluye capacitaciones, IA, NUVA, Equipares, Donación, Servicio, Contratos, etc.
   if (cat.includes('capacitación') || cat.includes('capacitacion') || cat.includes('curso') || 
       cat.includes('malla') || cat.includes('ubits') || cat.includes('semillero') || 
       cat.includes('escuela') || cat.includes('talento') || cat.includes('servicio') || 
@@ -314,7 +314,6 @@ function limpiar() {
   document.getElementById('cedula').focus();
 }
 
-/* LÓGICA DEL RANKING */
 function abrirRanking() {
   lanzarEstrellas();
 
