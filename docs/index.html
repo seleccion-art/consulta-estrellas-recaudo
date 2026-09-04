@@ -39,16 +39,16 @@
           <div class="pilar-card pilar-azul">
             <img src="img/Esencia RB.png" alt="Esencia RB" class="pilar-icon">
             <div class="pilar-info">
-              <h4>Esencia RB (Estrella Azul)</h4>
-              <p>Premia la integridad, la honestidad, el respeto, la creatividad, la equidad de género y tu vocación de servicio (Valor de la Excelencia).</p>
+              <h4>Esencia RB</h4>
+              <p>Premia la integridad, la honestidad, el respeto, la creatividad, la equidad de género y tu vocación de servicio.</p>
             </div>
           </div>
 
           <div class="pilar-card pilar-rojo">
             <img src="img/Aprendemos y Aportamos en RB.png" alt="Aprendemos y Aportamos RB" class="pilar-icon">
             <div class="pilar-info">
-              <h4>Aprendemos y Aportamos (Estrella Roja)</h4>
-              <p>Premia tu participación destacada en capacitaciones, mallas formativas, talleres y formación continua.</p>
+              <h4>Aprendemos y Aportamos</h4>
+              <p>Premia tu participación destacada en capacitaciones, mallas formativas y tus ideas innovadoras.</p>
             </div>
           </div>
 
@@ -139,7 +139,7 @@
     </footer>
   </div>
 
-  <!-- MODAL DE RANKING TOP 10 -->
+  <!-- MODAL DE RANKING TOP 10 (FLOTANTE SOBRE PANTALLA COMPLETA) -->
   <div id="modal-ranking" class="modal-overlay">
     <div class="modal-card fade-in">
       <div class="modal-header">
@@ -152,7 +152,7 @@
       <div class="modal-body">
         <p class="modal-subtitle">Nuestros colaboradores con mayor número de estrellas acumuladas a la fecha:</p>
         <div id="ranking-lista" class="ranking-container">
-          <!-- Carga vía JS -->
+          <!-- Se carga mediante JS -->
         </div>
       </div>
     </div>
@@ -174,7 +174,7 @@ function lanzarEstrellas() {
     decay: 0.94,
     startVelocity: 30,
     shapes: ['star'],
-    colors: ['#0284c7', '#dc2626', '#FFE100', '#FFBD00', '#7C3AED']
+    colors: ['FFE100', 'FFBD00', 'EAB308', 'A78BFA', '7C3AED']
   };
 
   function shoot() {
@@ -187,25 +187,36 @@ function lanzarEstrellas() {
   setTimeout(shoot, 300);
 }
 
-// DETERMINAR TIPO Y COLOR DE ESTRELLA
 function obtenerEstrella(categoria) {
-  const cat = String(categoria).trim().toLowerCase();
+  const cat = categoria.toLowerCase().trim();
 
-  // Estrella Azul: Exclusiva para 'Valor de la Excelencia' (o variaciones de Esencia RB)
-  if (cat.includes('valor de la excelencia') || cat === 'esencia rb') {
-    return {
-      img: 'img/Esencia RB.png',
-      color: '#0284c7',
-      tipo: 'Estrella Azul'
-    };
+  if (cat.includes('líder') || cat.includes('lider') || cat.includes('inspir') || 
+      cat.includes('moviliz') || cat.includes('brigad') || cat.includes('proyectos especiales') || 
+      cat.includes('convivencia') || cat.includes('copasst') || cat.includes('equipares') || 
+      cat.includes('clima') || cat.includes('influencia') || cat.includes('antiguedad') || 
+      cat.includes('antigüedad') || cat.includes('sostenibilidad') || cat.includes('eva. inversa') || 
+      cat.includes('encuesta') || cat.includes('directiv') || cat.includes('jefe') || cat.includes('gerente')) {
+    return { img: 'img/Lideres Inspiradores Que Movilizan.png', color: '#7c3aed' };
   }
 
-  // Estrella Roja: Capacitaciones y demás reconocimientos (SARLAF, Ninja Excel, Cursos, etc.)
-  return {
-    img: 'img/Aprendemos y Aportamos en RB.png',
-    color: '#dc2626',
-    tipo: 'Estrella Roja'
-  };
+  if (cat.includes('integridad') || cat.includes('honestidad') || cat.includes('respeto') || 
+      cat.includes('equidad') || cat.includes('excelencia') || cat.includes('creatividad') || 
+      cat.includes('esencia') || cat.includes('servicio')) {
+    return { img: 'img/Esencia RB.png', color: '#0284c7' };
+  }
+
+  if (cat.includes('capacitación') || cat.includes('capacitacion') || cat.includes('curso') || 
+      cat.includes('malla') || cat.includes('ubits') || cat.includes('semillero') || 
+      cat.includes('escuela') || cat.includes('talento') || cat.includes('servicio rb') || 
+      cat.includes('reconversión') || cat.includes('reconversion') || cat.includes('sarlaft') || 
+      cat.includes('hse') || cat.includes('acoso') || cat.includes('seguridad') || 
+      cat.includes('gobierno') || cat.includes('compras') || cat.includes('aportamos') || 
+      cat.includes('ninja') || cat.includes('flow') || cat.includes('estrés') || cat.includes('estres') ||
+      cat.includes('inteligencia') || cat.includes('ia') || cat.includes('empatia') || cat.includes('proactividad')) {
+    return { img: 'img/Aprendemos y Aportamos en RB.png', color: '#dc2626' };
+  }
+
+  return { img: 'img/Colaboradores Estrella.png', color: '#eab308' };
 }
 
 function buscar() {
@@ -252,11 +263,8 @@ function buscar() {
       const estrella = obtenerEstrella(cat);
       reconocimientosHTML += `
         <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
-          <img src="${estrella.img}" alt="${estrella.tipo}" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
-          <div style="display:flex; flex-direction:column;">
-            <span style="font-size:0.75rem; color:${estrella.color}; font-weight:800;">${estrella.tipo}</span>
-            <span>${cat}</span>
-          </div>
+          <img src="${estrella.img}" alt="Estrella" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
+          <span>${cat}</span>
         </div>
       `;
     });
@@ -300,7 +308,7 @@ function limpiar() {
   document.getElementById('cedula').focus();
 }
 
-/* LÓGICA Y ANIMACIÓN DEL RANKING TOP 10 */
+/* LÓGICA DEL RANKING */
 function abrirRanking() {
   const rankingLista = document.getElementById('ranking-lista');
   rankingLista.innerHTML = '';
@@ -308,9 +316,6 @@ function abrirRanking() {
   if (!datos || datos.length === 0) {
     rankingLista.innerHTML = '<p style="text-align:center; color:#64748b;">No hay datos disponibles en el sistema.</p>';
   } else {
-    // Lanzar animación de estrellas al desplegar el Top 10
-    lanzarEstrellas();
-
     const ordenados = [...datos].sort((a, b) => (Number(b.total) || 0) - (Number(a.total) || 0)).slice(0, 10);
 
     let html = '';
