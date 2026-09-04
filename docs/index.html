@@ -98,16 +98,16 @@
 
       <hr class="divider">
 
-      <!-- BANNER ACCESO AL RANKING TOP 10 (TEXTO MORADO Y BOTÓN DORADO) -->
+      <!-- BANNER ACCESO AL RANKING TOP 10 -->
       <section class="section-container">
         <div class="ranking-banner-card">
           <div class="ranking-banner-text">
-            <span class="ranking-banner-badge" style="background-color: #6d28d9; color: #ffffff;">CUADRO DE HONOR</span>
-            <h3 style="color: #4c1d95; font-size: 1.2rem; font-weight: 800; margin-top: 6px;">🏆 Top 10 Colaboradores Estrella</h3>
-            <p style="color: #6b21a8; font-size: 0.9rem; font-weight: 500;">Descubre quiénes lideran la tabla con más estrellas acumuladas en Recaudo Bogotá.</p>
+            <span class="ranking-banner-badge">CUADRO DE HONOR</span>
+            <h3>🏆 Top 10 Colaboradores Estrella</h3>
+            <p>Descubre quiénes lideran la tabla con más estrellas acumuladas en Recaudo Bogotá.</p>
           </div>
-          <button type="button" class="btn-ranking-action" onclick="abrirRanking()" style="background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); color: #422006; border: none; box-shadow: 0 4px 12px rgba(202, 138, 4, 0.35);">
-            <span style="font-weight: 800;">Ver Ranking Top 10</span> ⭐
+          <button type="button" class="btn-ranking-action" onclick="abrirRanking()">
+            <span>Ver Ranking Top 10</span> ⭐
           </button>
         </div>
       </section>
@@ -160,7 +160,6 @@
 
 <script>
 let datos = [];
-let personaActual = null;
 
 fetch('data.json')
   .then(res => res.json())
@@ -192,16 +191,20 @@ function lanzarEstrellas() {
 function obtenerEstrella(categoria) {
   const cat = String(categoria).trim().toLowerCase();
 
+  // Estrella Azul: Exclusiva para 'Valor de la Excelencia' (o variaciones de Esencia RB)
   if (cat.includes('valor de la excelencia') || cat === 'esencia rb') {
     return {
       img: 'img/Esencia RB.png',
-      color: '#0284c7'
+      color: '#0284c7',
+      tipo: 'Estrella Azul'
     };
   }
 
+  // Estrella Roja: Capacitaciones y demás reconocimientos (SARLAF, Ninja Excel, Cursos, etc.)
   return {
     img: 'img/Aprendemos y Aportamos en RB.png',
-    color: '#dc2626'
+    color: '#dc2626',
+    tipo: 'Estrella Roja'
   };
 }
 
@@ -222,9 +225,9 @@ function buscar() {
 
   btnLimpiar.style.display = 'block';
 
-  personaActual = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
+  const persona = datos.find(p => String(p.cedula).trim() === String(cedula).trim());
 
-  if (!personaActual) {
+  if (!persona) {
     resultado.innerHTML = `
       <div class="empty-state-card">
         <div class="empty-logo-wrapper">
@@ -239,13 +242,8 @@ function buscar() {
   }
 
   lanzarEstrellas();
-  renderizarPerfil();
-}
 
-function renderizarPerfil() {
-  if (!personaActual) return;
-
-  const listaReconocimientos = personaActual.reconocimientos || personaActual.categorias || [];
+  const listaReconocimientos = persona.reconocimientos || persona.categorias || [];
   const reconocimientosValidos = listaReconocimientos.filter(c => c && String(c).trim() !== '');
 
   let reconocimientosHTML = '';
@@ -253,17 +251,18 @@ function renderizarPerfil() {
     reconocimientosValidos.forEach(cat => {
       const estrella = obtenerEstrella(cat);
       reconocimientosHTML += `
-        <div class="badge-star" style="border-left: 4px solid ${estrella.color}; align-items: center;">
-          <img src="${estrella.img}" alt="Estrella" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
-          <span style="font-weight: 700; color: #1e293b;">${cat}</span>
+        <div class="badge-star" style="border-left: 4px solid ${estrella.color};">
+          <img src="${estrella.img}" alt="${estrella.tipo}" class="star-badge-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/1828/1828884.png';">
+          <div style="display:flex; flex-direction:column;">
+            <span style="font-size:0.75rem; color:${estrella.color}; font-weight:800;">${estrella.tipo}</span>
+            <span>${cat}</span>
+          </div>
         </div>
       `;
     });
   } else {
-    reconocimientosHTML = `<p style="color: #64748b; font-size: 0.85rem; grid-column: 1 / -1; text-align: center; padding: 10px;">No hay reconocimientos registrados.</p>`;
+    reconocimientosHTML = '<p style="color: #64748b; font-size: 0.85rem;">Sin reconocimientos registrados.</p>';
   }
-
-  const resultado = document.getElementById('resultado');
 
   resultado.innerHTML = `
     <div class="profile-card fade-in">
@@ -272,18 +271,19 @@ function renderizarPerfil() {
           <span class="profile-badge-tag">COLABORADOR(A) RECONOCIDO(A)</span>
         </div>
         
-        <h2 class="profile-name">${personaActual.nombre}</h2>
+        <h2 class="profile-name">${persona.nombre}</h2>
         
         <div class="stars-yellow-card">
           <span class="stars-label">TOTAL DE ESTRELLAS</span>
           <div class="stars-badge">
             <span class="star-icon">⭐</span>
-            <span class="stars-number">${personaActual.total}</span>
+            <span class="stars-number">${persona.total}</span>
           </div>
         </div>
       </div>
 
-      <div class="badges-section" style="margin-top: 24px;">
+      <div class="badges-section">
+        <p class="section-title">Reconocimientos asignados a la fecha:</p>
         <div class="categorias-grid">
           ${reconocimientosHTML}
         </div>
@@ -293,7 +293,6 @@ function renderizarPerfil() {
 }
 
 function limpiar() {
-  personaActual = null;
   document.getElementById('cedula').value = '';
   document.getElementById('resultado').innerHTML = '';
   document.getElementById('error').innerHTML = '';
@@ -309,6 +308,7 @@ function abrirRanking() {
   if (!datos || datos.length === 0) {
     rankingLista.innerHTML = '<p style="text-align:center; color:#64748b;">No hay datos disponibles en el sistema.</p>';
   } else {
+    // Lanzar animación de estrellas al desplegar el Top 10
     lanzarEstrellas();
 
     const ordenados = [...datos].sort((a, b) => (Number(b.total) || 0) - (Number(a.total) || 0)).slice(0, 10);
