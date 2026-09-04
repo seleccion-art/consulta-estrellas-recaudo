@@ -310,6 +310,8 @@ function limpiar() {
 
 /* LÓGICA DEL RANKING */
 function abrirRanking() {
+  lanzarEstrellas(); // Animación de estrellas al abrir ranking
+
   const rankingLista = document.getElementById('ranking-lista');
   rankingLista.innerHTML = '';
 
